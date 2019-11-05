@@ -1,0 +1,9 @@
+# Triggers when the game starts
+on_game_start = {
+	events = {
+		mom_house_divided.1
+		mom_severance.1
+		mom_breakaway_civ.1
+		action.90
+	}
+}

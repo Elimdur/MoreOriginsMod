@@ -1,0 +1,11 @@
+namespace = mom_breakaway_civ
+
+#gamestart
+event = {
+	id = mom_breakaway_civ.1
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		
