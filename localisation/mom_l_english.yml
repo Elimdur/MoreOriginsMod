@@ -16,10 +16,193 @@
  origin_tooltip_mom_severance_effects:0 "Begin with a wormhole in your homesystem, a colony on the other side, but no means to safely travel through it."
  START_SCREEN_MOM_SEVERANCE:0 "Our civilization prospered on [GetHomeWorldName] for a long time, but our people always felt that our destiny lay out there in the void. Early space exploration limited to our homesystem by primitive STL-drives had yielded an extraordinary discovery. A wormhole connected our system to another further away than we could ever hope to reach by conventional means. Scouts where sent, followed by a colony ship heading for a planet now known as [event_target:mom_severance_colony.GetName]. It was a dream come true, though as any dream it didn't last.\n\nThe wormhole became unstable shortly after our colony's founding. Experts still debate whether it was ever stable, to begin with, or we'd just been lucky. Many lives were lost, when another wave of colonists failed to reach the other side and further manned travel through it was deemed too dangerous. However, communication was still possible, but supplies sent through it had only a 30% expectancy to reach their destination. This separation left us in a precarious situation.\n\nBut now, after the discovery of the hyperlane network, the finest minds of the [GetName] have finished development of the first hyper drives. We are finally able to reach other stars and hopefully our colony as well."
  
- # Breakaway Civilization
+ # Breakaway Civilization Localisation
  origin_mom_breakaway_civ:0 "Breakaway Civilization"
  origin_mom_breakaway_civ_desc:0 "Still fractured into various nation states this civilization made its first steps on the way to become spacefaring after the discovery of an ancient alien wreckage. Unbeknownst by its rivals or even its own population one of the worlds superpowers began reverse engineering the alien technology in secrecy."
  origin_tooltip_mom_breakaway_civ_effects:0 "Begin with fewer pops but the potential of planetary unification, which if achieved provides access to the workforce and natural resources of the other nation states.\nBeware the looming threat of nuclear war and try to ease the tensions...\nOr face the consequences of your mistakes..."
  START_SCREEN_MOM_BREAKAWAY_CIV:0 "[GetHomeWorldName] is a fractured world - divided between various super powers. Wars dominated our history, but the splitting of the atom and its derived weapons of mass destruction changed everything.\n\nThough major conflicts have ceased under the threat of mutually assured destruction, we are living in a state of cold war and tensions are higher than ever before.\n\nBut even in these trying times we have been blessed with good fortune. A discovery has been made in a desolate and only sparsely populated area under our dominion - a strange vessel which must have crashed there ages ago. Scientists believe it to be of alien origin and having once been capable of interstellar travel. Thanks to the remote location of this finding we were able to keep it a secret not only from the broad puplic but also from our rivals.\n\nToday we will reap the fruits of years of development and research and clandestine operations to establish outposts in our solar system. The [GetName] might not know it yet, but future history books will speak of this day as the beginning of a new age as we send out our first explorational vessel to another star."
 
+ # Exiles Localisation
+ origin_mom_exiles:0 "Exiles"
+ origin_mom_exiles_desc:0 ""
+ origin_tooltip_mom_exiles_effects:0 ""
+ START_SCREEN_MOM_EXILES:0 "Since ancient times our legends tell the story of a doomed world - ravaged by a merciless foe. Our ancestors narrowly escaped their brethren's fate fleeing their homeworld in a ragtag fleet of freighters and eventually settling [GetHomeWorldName] with what little they had left. Much Knowledge and technology has been lost while our people struggled through hardships in making this planet their new home.\n\nNow, over two millenia later our civilization has finally recovered and is ready to return to the stars."
+
+ #New Blocker 
+ d_mom_city_ruins:0 "$d_city_ruins$"
+ d_mom_city_ruins_desc:0 "$d_city_ruins_desc$"
+ 
+ ####################
+ # Exiles Questline #
+ ####################
+ 
+ mom_exiles.2.name:0 "Ancestral Legacy"
+ mom_exiles.2.desc:0 "Since ancient times our legends tell the story of a doomed world - ravaged by a merciless foe. Our ancestors narrowly escaped their brethren's fate fleeing their homeworld in a ragtag fleet of freighters and eventually settling [capital_scope.GetName]"
+ mom_exiles.2.a:0 "Indeed a fitting start."
+
+ #Durins Hall Event Chain
+ mom_exiless_hall_title:0 "A Journey to the Stars"
+ mom_exiless_hall_desc:0 "For a long time have the stars been a central part of our legends and what would be a more fitting start of our journey into the unknown than Durin's Folk visiting the most important star of our legends, the "Hall of Durin"."
+ 
+ # Point of interest Durins Hall System
+ durins_hall.1.name:0 "Visit Durin's Hall"
+ durins_hall.1.desc:0 "Visit the legendary star "Durin's Hall"."
+ 
+ #Durin's halls system is visited, starts survey khazad dum
+ mom_exiles.3.name:0 "The Hall of Durin"
+ mom_exiles.3.desc:0 "We have reached the legendary "Hall of Durin". Our Scientists did not expect to find anything special there. But when first system scans reached them they were struck speechless. There is one planet orbiting its sun inside the habitable zone.\n\nAnd there is more! It seems to be orbited by some kind of mega structure. We should investigate it as soon as possible."
+ mom_exiles.3.a:0 "Make it so."
+ 
+ #Khazad Dum Mystery
+ mhs_khazad_dum_title:0 "A Mysterious Place"
+ mhs_khazad_dum_desc:0 "We have found a place more mysterious than we would have ever expected to find out there in space. We should invetigate it further."
+ 
+ # Point of interest Khazad Dum
+ durins_hall.2.name:0 "Survey Khazad Dum"
+ durins_hall.2.desc:0 "What is this Place?"
+ 
+ #Khazad Dum has been surveyed, starts surface expedition research project.
+ mom_exiles.4.name:0 "[root.owner.species.GetAdj] Origins"
+ mom_exiles.4.desc:0 "A heavily damaged gigantic ring orbits a planet covered in dense clouds. High radiation values are measured by our probes. Our scientists already supected what became a certainty when our scienceship found a small object orbiting the planet. It turned out to be an ancient lifepod - in it the remains of its unfortunate passenger - apparently [root.owner.species.GetAdj].\n\n In ancient times Durin lead our people away from their home when a great disaster struck it. It was a long exodus beneath the stars until they found their new home. Though we always believed this ancient home to be somewhere on Erebor, lost to the ages, this must be Khazad Dum our ancient home."
+ mom_exiles.4.a:0 "We need to find out more."
+
+ #Khazad Dum Surface Expedition Research
+ KHAZAD_DUM_EXPEDITION_PROJECT:0 "Heritage of the Ancients"
+ KHAZAD_DUM_EXPEDITION_PROJECT_DESC:0 "In order to find out more about our distant past we have to find a way to establish a stable outpost on Khazad Dum. We will have to remove many obstacles to make this possible. The harsh environment and possibly deadly radiation are just two of them."
+
+ #Expedition Research is completed now colonize this planet
+ mom_exiles.5.name:0 "Reclaim what is Ours"
+ mom_exiles.5.desc:0 "Our scientists came up with plans how to counter the threats our expedition will be faced with. Though it will not be very pleasant our personnel will have to wear heavy protective gear at all time when beeing outside their shielded habitat modules. All these protection measures will also increase production times and costs for any building constructed. A suitable landing place where Radiation levels are within acceptable limits has been found as well.\n\nIt is time to establish an expeditionary outpost on Khazad Dum. We still do not know what happened to our ancestors. What might have destroyed their world, laid their cities to ruins and brought their civilisation to collapse?"
+ mom_exiles.5.a:0 "Prepare a long-term expedition."
+
+ #Point of interest for colonizing Khazad Dum
+ durins_hall.3.name:0 "Colonize Khazad Dum"
+ durins_hall.3.desc:0 "Build an outpost on Khazad Dum to find out more about our ancestors."
+ 
+ #Clear the planet of all tile blockers (ruins)
+ mom_exiles.7.name:0 "Outpost Established"
+ mom_exiles.7.desc:0 "With our outpost established, it is time to begin the planned expeditions into the old ruins. We´ll also have to clear any obstacles that prevent our teams' movement along the way."
+ mom_exiles.7.a:0 "Proceed with the expedition."
+ 
+ #Point of interest on Khazad Dum for clearing tile blockers
+ durins_hall.4.name:0 "Clear Ruins on Khazad Dum"
+ durins_hall.4.desc:0 "We have to clear any obstacles that prevent our teams' movement."
+ 
+ #All blockers have been cleared.
+ mom_exiles.8.name:0 "The Great Gateway"
+ mom_exiles.8.desc:0 "The last excavation area held an extraordinary secret. Our team has found a giant gateway to an underground network. At the moment we can only guess how far it stretches."
+ mom_exiles.8.a:0 "Prepare an expedition into the deeps."
+
+ #Modifiers
+ mhs_expedition_preparation:0 "Expedition Preparations"
+ mhs_expedition_preparation_desc:0 "In order to protect our personel from the hostile environment protective gear is mandatory at all times when leaving the shielded habitat modules."
+ mhs_ringworld_restored:0 "Planetary Ring"
+ mhs_ringworld_restored_desc:0 "A restored relic of a long forgotten time orbits the planet providing living space."
+ mhs_underground_secured:0 "Secured Underground Network"
+ mhs_underground_secured_desc:0 "The reclamation of the extensive underground network provides much space for further expansion."
+ 
+ #Mines of Durin Planetary Feature
+ d_mom_exiless_mines:0 "Mines of Durin"
+ d_mom_exiless_mines_desc:0 "A vast and ancient network of underground mines, vaults and production facilities stretching over the whole planet."
+ 
+ #Starts Khazad Dum's Depths expedition
+ KHAZAD_DUM_DEEPS_EXPEDITION_PROJECT:0 "The Mines of Durin"
+ KHAZAD_DUM_DEEPS_EXPEDITION_PROJECT_DESC:0 "In our efforts we have discovered what appears to be an ancient mine, we should see what lies inside."
+
+ #Discovers underground horrors who attack
+ mom_exiles.9.name:0 "The Horrors Below"
+ mom_exiles.9.desc:0 "Our expedition of the mine has gone horribly awry, a horde of undescribable horrors seem to have awakened and slaughtered our expedition team. They have now begun pouring out of the gateway and are preparing to launch a full scale assault on our outpost."
+ mom_exiles.9.a:0 "Send our forces to save them!"
+ 
+ #Ancient Robot Armies
+ mhs_ancient_horrors:0 "Ancient Robotic Warmachines"
+
+ #We lost the battle agains the horrors
+ mom_exiles.10.name:0 "Tragedy"
+ mom_exiles.10.desc:0 "Our numbers were too few to withstand the onslaught, our forces are scattered and in full retreat."
+ mom_exiles.10.a:0 "We have to retake the planet!"
+
+ #The horrors have begun rampaging throughout the planet killing off our population there.
+ mom_exiles.11.name:0 "Rampaging"
+ mom_exiles.11.desc:0 "With the loss of control we are unable to defend our citizens, they are helpless against the hordes."
+ mom_exiles.11.a:0 "We have to send reinforcements immediatly!"
+
+ #We succesfully defended the planet against the horrors initial attack.
+ mom_exiles.12.name:0 "Victory"
+ mom_exiles.12.desc:0 "These abominations did not foresee our might, the ones who are still alive have scurried back to the depths from which they came."
+ mom_exiles.12.a:0 "For [root.Capital.GetName]!"
+
+ # We have successfully reconquered the planet.
+ mom_exiles.13.name:0 "Reconquest"
+ mom_exiles.13.desc:0 "We have successfully reclaimed our rightful heritage from these abominations, the surviving colonists are back under our protection once again."
+ mom_exiles.13.a:0 "For [root.Capital.GetName]!"
+
+ #A small group of citizens have barricaded themselves.
+ mom_exiles.15.name:0 "Isolated"
+ mom_exiles.15.desc:0 "The siege has claimed many lives. Only a small group of citizens were able to barricade themselves in an area where they are save for the time being."
+ mom_exiles.15.a:0 "We have to save them!"
+ 
+ KHAZAD_DUM_DEEPS_RETALIATION_PROJECT:0 "Reconquest of the Dephts"
+ KHAZAD_DUM_DEEPS_RETALIATION_PROJECT_DESC:0 "We have to ensure the threat of these ancient machines is dealed with once and for all. A grand scale campaign into the underground system will require us to throw in every ground force we have. We should only attempt this with a full army at our diposal."
+ 
+ # The Attack on the underground starts
+ mom_exiles.16.name:0 "The Hour has Come"
+ mom_exiles.16.desc:0 "Our preparations are complete, our troops are in place. The time has come to fully retake our world has come."
+ mom_exiles.16.a:0 "We will retake our world!"
+ 
+ # We have successfully conquered the underground.
+ mom_exiles.17.name:0 "Reconquest"
+ mom_exiles.17.desc:0 "We have successfully reclaimed our rightful heritage from these abominations.\n\nPeace has finally come to this war torn world -- our world. Our Scientists are eager to explore what lies beneath the ruined surface of [FromFrom.GetName]."
+ mom_exiles.17.a:0 "For [root.Capital.GetName]!"
+ 
+ #Restoration part starts
+ mom_exiles.181.name:0 "Deep Underground"
+ mom_exiles.181.desc:0 "In the vast underground network of [mhs_khazad_dum_planet.GetName] our scientists found a technological complex that they deem to be an atmospheric cleaning system. With this facility repaired we might be able to restore this planet's atmosphere end return it to its native state. They have already layed out a plan to get it into working order again."
+ mom_exiles.181.a:0 "Good work."
+ 
+ #Khazad Dum restoration
+ mhs_khazad_dum_rebuilding_title:0 "Restoration of our Homeworld"
+ mhs_khazad_dum_rebuilding_desc:0 "With our original home world being under our control again we should begin to restore it to its ancient glory."
+ 
+ # Planetary Restoration Project
+ KHAZAD_DUM_RESTORATION_PROJECT:0 "Planetary Restoration"
+ KHAZAD_DUM_RESTORATION_PROJECT_DESC:0 "Our scientists and engineers are optimistic they will be able to repair and maintain this advanced machinery complex given enough time to study it first."
+ 
+ # Restoration Project complete Machinery begins to work
+ mom_exiles.19.name:0 "Atmospheric Renewer Repaired"
+ mom_exiles.19.desc:0 "The atmospheric renewer has finally been activated. Our experts estimate a stabilization of Khazad Dum's atmosphere in approximately five years."
+ mom_exiles.19.a:0 "Congratulations to the team."
+ 
+ # Restoration of Atmosphere complete
+ mom_exiles.20.name:0 "Restoration Complete"
+ mom_exiles.20.desc:0 "[root.GetName] is once again a habitable world and worthy home to our people."
+ mom_exiles.20.a:0 "A worthy home for the [root.owner.species.GetAdj] people, indeed."
+ 
+ # Plans for Planetary Ring Reconstruction Found
+ mom_exiles.21.name:0 "A Strange Finding"
+ mom_exiles.21.desc:0 "In the depths of the underground network of [root.GetName] we have found a storage of extraordinary material. At first it seemed to be some sort of metal alloy but it possess properties none of our scientists can explain. It somehow repairs damage to its structure by itself.\n\n Having access to such a material may open up possibilities we did not dare to think about before. With it we might even be able to reconstruct the destroyed planetary ring structure that orbits [root.GetName]. In fact it must have been a prerequisite for its construction in the first place."
+ mom_exiles.21.a:0 "A strange material."
+ 
+ # Ring Reconstruction Project
+ KHAZAD_DUM_RING_RECONSTRUCTION_PROJECT:0 "Ring Reconstruction"
+ KHAZAD_DUM_RING_RECONSTRUCTION_PROJECT_DESC:0 "With this "living metal" at our disposal and an enormous amount of minerals and energy the reconstruction of Khazad Dum's orbital ring should be possible.\n\nThough it will take several years and reduce [root.GetName]'s production output by 50% while the reconstruction is underway. Our experts estimate this process to take about 10 years."
+ 
+ # Project for Planetary Ring Reconstruction complete work starts
+ mom_exiles.22.name:0 "Preparations Complete"
+ mom_exiles.22.desc:0 "Our scientists have finished their study on the remains of the ringworld and the "Living metal" as they call it. Work on its restoration can now start."
+ mom_exiles.22.a:0 "We all eagerly await its finish."
+ 
+ #Ringworld restored
+ mom_exiles.23.name:0 "Ringworld Restored"
+ mom_exiles.23.desc:0 "The work is completed and [root.GetName] is now fully restored to its former Glory. It is a great they for the [root.owner.GetName]. Citizens are celebrating all over the empire. May we never loose [root.GetName] again."
+ mom_exiles.23.a:0 "It is ours now and forever!"
+ 
+ #modifiers
+ mom_scared_population:0 "Panic Among the Population"
+ mom_scared_population_desc:0 "Our people live in fear of the horrible Automatons that came from the underground."
+ 
+ mom_ringworld_reconstruction:0 "Ringworld Restoration in Progress"
+ mom_ringworld_reconstruction_desc:0 "The whole populace is determined in restoring the ancient planetary ring world leading to a doubled unity output. On the other hand most ressources go into this project leading to a lowered overall output of the planet."
+ 
+ mom_ringworld_reconstructed:0 "Restored our Ancestor's Homeworld"
 
