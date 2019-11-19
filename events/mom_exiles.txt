@@ -34,6 +34,7 @@ country_event = {
 	desc = "mom_exiles.2.desc"
 	picture = GFX_evt_ship_in_orbit
 	show_sound = event_default
+	location = capital_star
 	
 	is_triggered_only = yes
 	
@@ -69,6 +70,7 @@ ship_event = {
 	is_triggered_only = yes 
 	show_sound = event_mystic_reveal
 	picture = GFX_evt_fallen_empire
+	location = root
 	
 	fire_only_once = yes
 	
@@ -417,6 +419,7 @@ country_event = {
 	is_triggered_only = yes
 	show_sound = event_red_alert
 	picture = GFX_evt_interior_battle
+	location = event_target:mom_exiles_planet
 
 	option = {
 		name = mom_exiles.11.a
@@ -558,6 +561,7 @@ country_event = {
 	is_triggered_only = yes
 	show_sound = event_red_alert
 	picture = GFX_evt_interior_battle
+	location = event_target:mom_exiles_planet
 	
 	option = {
 		name = mom_exiles.15.a

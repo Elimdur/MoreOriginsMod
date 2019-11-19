@@ -28,3 +28,13 @@ part = {
 		has_origin = origin_mom_breakaway_civ
 	}
 }
+
+# Breakaway Civilization
+part = {
+	location = 0
+	localization = "START_SCREEN_MOM_EXILES"
+	
+	trigger = {
+		has_origin = origin_mom_exiles
+	}
+}

@@ -17,4 +17,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/origins_eventpictures/origins_mom_breakaway_civ.dds"
 		alwaystransparent = yes
 	}
+
+	spriteType = {
+		name = "GFX_origin_mom_exiles"
+		texturefile = "gfx/event_pictures/origins_eventpictures/origins_mom_exiles.dds"
+		alwaystransparent = yes
+	}
 }
