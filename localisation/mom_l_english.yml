@@ -102,8 +102,8 @@
  mom_underground_secured_desc:0 "The reclamation of the extensive underground network provides much space for further expansion."
  
  #Underground Network Planetary Feature
- d_mom_exiless_mines:0 "Underground Network"
- d_mom_exiless_mines_desc:0 "A vast and ancient network of underground mines, vaults and production facilities stretching over the entire planet."
+ d_mom_exiles_mines:0 "Underground Network"
+ d_mom_exiles_mines_desc:0 "A vast and ancient network of underground mines, vaults and production facilities stretching over the entire planet."
  
  #Starts Domum' Depths expedition
  MOM_EXILES_DEEPS_EXPEDITION_PROJECT:0 "The Underground Network"

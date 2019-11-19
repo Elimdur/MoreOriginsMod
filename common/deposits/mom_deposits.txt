@@ -1,4 +1,4 @@
-d_mom_mines = {
+d_mom_exiles_mines = {
 	is_for_colonizeable = yes
 	category = deposit_cat_rare
 	
@@ -71,7 +71,7 @@ d_mom_city_ruins = {
 
 	on_cleared = {
 		hidden_effect = {
-			planet_event = { id = mhs_durin.8001 }
+			planet_event = { id = mom_exiles.8001 }
 		}
 	}
 
