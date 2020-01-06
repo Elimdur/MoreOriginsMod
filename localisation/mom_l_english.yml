@@ -19,7 +19,7 @@
  # Breakaway Civilization Localisation
  origin_mom_breakaway_civ:0 "Breakaway Civilization"
  origin_mom_breakaway_civ_desc:0 "Still fractured into various nation states, this civilization made its first steps on the way to become spacefaring after the discovery of an ancient alien wreckage. Unbeknownst by its rivals or even its own population, one of the worlds superpowers began reverse engineering the alien technology in secrecy."
- origin_tooltip_mom_breakaway_civ_effects:0 "Begin with fewer pops but the potential of planetary unification, which if achieved provides access to the workforce and natural resources of the other nation states.\nBeware the looming threat of nuclear war and try to ease the tensions... Or face the consequences of your mistakes..."
+ origin_tooltip_mom_breakaway_civ_effects:0 "Begin with fewer pops but the potential of planetary unification, which if achieved provides access to the workforce and natural resources of the other nation states.\nBeware the looming threat of nuclear war and try to ease the tensions...\nOr face the consequences of your mistakes..."
  START_SCREEN_MOM_BREAKAWAY_CIV:0 "[GetHomeWorldName] is a fractured world, divided between various superpowers. Wars dominated our history, but the splitting of the atom and its derived weapons of mass destruction changed everything.\n\nThough major conflicts have ceased under the threat of mutually assured destruction, we are living in a state of cold war and tensions are higher than ever before.\n\nBut even in these trying times, we have been blessed with good fortune. A discovery has been made in a desolate and sparsely populated area under our dominion - a strange vessel which must have crashed there eons ago. Scientists believe it to be of alien origin and posit that it was once capable of interstellar travel. Thanks to the remote location of this finding, we were able to keep it a secret not only from the broad public but also from our rivals.\n\nToday we will reap the fruits of years of development and research and clandestine operations to establish outposts in our solar system. The [GetName] might not know it yet, but future history books will speak of this day as the beginning of a new age, as we send out our first explorational vessel to another star."
 
  # Exiles Localisation
@@ -107,7 +107,7 @@
  
  #Starts Domum' Depths expedition
  MOM_EXILES_DEEPS_EXPEDITION_PROJECT:0 "The Underground Network"
- MOM_EXILES_DEEPS_EXPEDITION_PROJECT_DESC:0 "In our efforts we have discovered what appears to be an ancient mine.  We should see what lies inside."
+ MOM_EXILES_DEEPS_EXPEDITION_PROJECT_DESC:0 "In our efforts we have discovered what appears to be an ancient mine. We should see what lies inside."
 
  #Discovers underground horrors who attack
  mom_exiles.9.name:0 "The Horrors Below"
