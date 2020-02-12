@@ -22,6 +22,7 @@ event = {
 			set_country_flag = Story3
 			set_country_flag = encountered_first_wormhole
 			add_seen_bypass_type = wormhole
+			add_research_option = tech_wormhole_stabilization
 			capital_scope = {
 				solar_system = {
 					IF = {

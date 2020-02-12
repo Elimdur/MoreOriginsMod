@@ -76,7 +76,12 @@ planet_event = {
 			limit = {
 				has_deposit = mom_breakaway_civ_blocker
 			}
-			clear_blocker = mom_breakaway_civ_blocker
+			random_deposit = {
+				limit = {
+					is_deposit_type = mom_breakaway_civ_blocker
+				}
+				clear_blocker = yes
+			}			
 		}		
 	}
 }
