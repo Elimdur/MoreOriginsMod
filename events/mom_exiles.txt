@@ -6,12 +6,10 @@ event = {
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		random_country = {
+		every_country = {
 			limit = {
 				has_origin = origin_mom_exiles
 			}
-			set_country_flag = mom_exiless
-			set_country_flag = mom_exilessforge
 			country_event = { id = mom_exiles.2 days = 5 }
 			capital_scope = {
 				solar_system = {
@@ -72,8 +70,6 @@ ship_event = {
 	picture = GFX_evt_fallen_empire
 	location = root
 	
-	fire_only_once = yes
-	
 	trigger = {
 		FROM = { # system
 			has_star_flag = mom_exiles_system
@@ -127,8 +123,6 @@ ship_event = {
 	is_triggered_only = yes
 	location = from
 	show_sound = event_ghost_town
-
-	fire_only_once = yes
 	
 	trigger = {
 		FROM = { #planet
@@ -136,11 +130,15 @@ ship_event = {
 		}
 		owner = {
 			has_event_chain = mom_exiles_planet
+			not = {
+				has_country_flag = mom_exiles_planet_surveyed
+			}
 		}
 	}
 	immediate = {
 		owner = {
 			remove_point_of_interest = mom_exiles_system.2
+			set_country_flag = mom_exiles_planet_surveyed
 		}
 	}
 	option = {
@@ -162,7 +160,6 @@ ship_event = {
 	location = from
 	show_sound = event_default
 	is_triggered_only = yes
-	fire_only_once = yes
 	immediate = {
 		FromFromFrom = { # planet
 			save_event_target_as = mom_exiles_planet
@@ -207,9 +204,9 @@ planet_event = {
 	location = ROOT
 	show_sound = event_construction
 	picture = GFX_evt_city_ruins
-
-	fire_only_once = yes
 	
+	is_triggered_only = yes
+
 	pre_triggers = {
 		has_owner = yes
 	}
@@ -335,21 +332,36 @@ planet_event = {
 				}
 			}
 		}
-		create_army = {
-			name = "Ancient Horrors"
-			owner = last_created
-			type = "mom_ancient_horrors"
+		IF = {
+			limit = {
+				owner = {
+					is_ai = no
+				}
+			}
+			create_army = {
+				name = "Ancient Horrors"
+				owner = last_created
+				type = "mom_ancient_horrors"
+			}
+			create_army = {
+				name = "Ancient Horrors"
+				owner = last_created
+				type = "mom_ancient_horrors"
+			}
+			create_army = {
+				name = "Ancient Horrors"
+				owner = last_created
+				type = "mom_ancient_horrors"
+			}
 		}
-		create_army = {
-			name = "Ancient Horrors"
-			owner = last_created
-			type = "mom_ancient_horrors"
+		else = {
+			create_army = {
+				name = "Ancient Horrors"
+				owner = last_created
+				type = "mom_ancient_horrors"
+			}
 		}
-		create_army = {
-			name = "Ancient Horrors"
-			owner = last_created
-			type = "mom_ancient_horrors"
-		}
+		
 		last_created_country = {
 			save_global_event_target_as = mom_underground_horrors
 		}
@@ -376,7 +388,10 @@ planet_event = {
 	location = root
 	show_sound = event_ground_battle
 	picture = GFX_evt_ground_combat
-	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 2
+	}
 
 	pre_triggers = {
 		has_owner = yes
@@ -387,6 +402,9 @@ planet_event = {
 		#Owner of the planet has event chain
 		owner = { # Country
 			has_event_chain = mom_exiles_planet
+			not = {
+				has_country_flag = mom_exiles_lost_1
+			}
 		}
 		
 		#Attackers are horrors
@@ -400,6 +418,7 @@ planet_event = {
 			days = 60
 		}
 		owner = { # country
+			set_country_flag = mom_exiles_lost_1
 			country_event = {
 				id = mom_exiles.11 # Inform player about what will happen when the horrors are controlling the planet
 				days = 60
@@ -479,7 +498,10 @@ planet_event = {
 	location = root
 	show_sound = event_ground_battle
 	picture = GFX_evt_ground_combat
-	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 2
+	}
 
 	pre_triggers = {
 		has_owner = yes
@@ -612,35 +634,49 @@ planet_event = {
 				}
 			}	
 		}
-		create_army = {
-			name = "Ancient Horrors"
-			owner = last_created
-			type = "mom_ancient_horrors"
+		IF = {
+			limit = {
+				owner = {
+					is_ai = no
+				}
+			}
+			create_army = {
+				name = "Ancient Horrors"
+				owner = last_created
+				type = "mom_ancient_horrors"
+			}
+			create_army = {
+				name = "Ancient Horrors"
+				owner = last_created
+				type = "mom_ancient_horrors"
+			}
+			create_army = {
+				name = "Ancient Horrors"
+				owner = last_created
+				type = "mom_ancient_horrors"
+			}
+			create_army = {
+				name = "Ancient Horrors"
+				owner = last_created
+				type = "mom_ancient_horrors"
+			}
+			create_army = {
+				name = "Ancient Horrors"
+				owner = last_created
+				type = "mom_ancient_horrors"
+			}
+			create_army = {
+				name = "Ancient Horrors"
+				owner = last_created
+				type = "mom_ancient_horrors"
+			}
 		}
-		create_army = {
-			name = "Ancient Horrors"
-			owner = last_created
-			type = "mom_ancient_horrors"
-		}
-		create_army = {
-			name = "Ancient Horrors"
-			owner = last_created
-			type = "mom_ancient_horrors"
-		}
-		create_army = {
-			name = "Ancient Horrors"
-			owner = last_created
-			type = "mom_ancient_horrors"
-		}
-		create_army = {
-			name = "Ancient Horrors"
-			owner = last_created
-			type = "mom_ancient_horrors"
-		}
-		create_army = {
-			name = "Ancient Horrors"
-			owner = last_created
-			type = "mom_ancient_horrors"
+		else = {
+			create_army = {
+				name = "Ancient Horrors"
+				owner = last_created
+				type = "mom_ancient_horrors"
+			}
 		}
 		last_created_country = {
 			save_global_event_target_as = mom_underground_horrors
@@ -705,7 +741,10 @@ planet_event = {
 	location = root
 	show_sound = event_ground_battle
 	picture = GFX_evt_ground_combat
-	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 2
+	}
 	
 	pre_triggers = {
 		has_owner = yes
@@ -724,7 +763,7 @@ planet_event = {
 	}
 	immediate = {
 		owner = {
-			remove_country_flag = mom_exiless_hall_khazad_dum_retaliation
+			remove_country_flag = mom_exiles_retaliation
 		}
 	}
 	option = {
