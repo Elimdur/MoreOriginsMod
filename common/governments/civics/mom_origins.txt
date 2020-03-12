@@ -37,9 +37,6 @@ origin_mom_house_divided_splinter_colony = {
 	possible = {
 	}
 
-#	description = "origin_tooltip_void_dwellers_effects"
-#	flags = { custom_start_screen }
-
 	traits = {
 	}
 	
@@ -82,6 +79,7 @@ origin_mom_breakaway_civ = {
 	max_once_global = yes
 
 	playable = {
+		always = no
 	}
 
 	possible = {

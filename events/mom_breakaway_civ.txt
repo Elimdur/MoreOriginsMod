@@ -74,11 +74,11 @@ planet_event = {
 		remove_planet_flag = mom_breakaway_civ_planet
 		if = {
 			limit = {
-				has_deposit = mom_breakaway_civ_blocker
+				#has_deposit = mom_breakaway_civ_blocker
 			}
 			random_deposit = {
 				limit = {
-					is_deposit_type = mom_breakaway_civ_blocker
+					#is_deposit_type = mom_breakaway_civ_blocker
 				}
 				clear_blocker = yes
 			}			
@@ -108,7 +108,7 @@ country_event = {
 							value > 60
 						}
 					}
-					country_event = { id = mom_breakaway_civ.x }
+					#country_event = { id = mom_breakaway_civ.x }
 				}
 				1 = {
 
