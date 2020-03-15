@@ -39,3 +39,12 @@ mom_scared_population = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_factory.dds"
 	icon_frame = 3
 }
+
+mom_god_emperor_dead = {
+	planet_jobs_minerals_produces_mult = -0.10
+	planet_jobs_energy_produces_mult = -0.10
+	planet_jobs_physics_research_produces_mult = -0.10
+	planet_jobs_society_research_produces_mult = -0.10
+	planet_jobs_engineering_research_produces_mult = -0.10
+	planet_jobs_unity_produces_mult = -0.10
+}
