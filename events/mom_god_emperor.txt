@@ -189,7 +189,6 @@ country_event = {
 			target = FROM
 			class = ruler
 			effect = {
-				save_global_event_target_as = mom_god_emperor_clone
 				set_leader_flag = mom_god_emperor_clone
 				set_leader_flag = mom_god_emperor
 			}
@@ -325,6 +324,12 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		random_owned_leader = {
+			limit = {
+				has_leader_flag = mom_god_emperor_clone
+			}
+			save_event_target_as = mom_god_emperor_clone
+		}
 		set_leader = event_target:mom_god_emperor_clone
 		ruler = {
 			save_event_target_as = mom_god_emperor
@@ -334,7 +339,6 @@ country_event = {
 			target = event_target:mom_god_emperor
 			class = ruler
 			effect = {
-				save_global_event_target_as = mom_god_emperor_clone
 				set_leader_flag = mom_god_emperor_clone
 				set_leader_flag = mom_god_emperor
 			}
