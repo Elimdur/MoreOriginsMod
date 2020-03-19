@@ -134,6 +134,7 @@ event = {
 						limit = {
 							has_planet_flag = mom_house_divided_colony_1
 						}
+						set_planet_flag = mom_house_divided_colony_1_fire_se
 						create_colony = {
 							owner = event_target:mom_house_divided_country
 						}
@@ -143,7 +144,6 @@ event = {
 								species = owner_main_species
 							}
 						}
-						create_mom_hd_defector_1 = yes
 					}
 				}
 				closest_system = {
@@ -156,6 +156,7 @@ event = {
 						limit = {
 							has_planet_flag = mom_house_divided_colony_2
 						}
+						set_planet_flag = mom_house_divided_colony_2_fire_se
 						create_colony = {
 							owner = event_target:mom_house_divided_country
 						}
@@ -165,9 +166,22 @@ event = {
 								species = owner_main_species
 							}
 						}
-						create_mom_hd_defector_2 = yes
 					}
 				}
+			}
+			random_planet = {
+				limit = {
+					has_planet_flag = mom_house_divided_colony_1_fire_se
+				}
+				remove_planet_flag = mom_house_divided_colony_1_fire_se
+				create_mom_hd_defector_1 = yes
+			}
+			random_planet = {
+				limit = {
+					has_planet_flag = mom_house_divided_colony_2_fire_se
+				}
+				remove_planet_flag = mom_house_divided_colony_2_fire_se
+				create_mom_hd_defector_2 = yes
 			}
 			random_country = {
 				limit = {
