@@ -38,6 +38,8 @@
  # Divine Guidance  #
  ####################
 
+ #Modifier when emperor is alive
+ mom_god_emperor_alive:0 "Divine Rule"
  #Modifier when emperor is dead
  mom_god_emperor_dead:0 "Our people are shaken by the loss of their leader"
 

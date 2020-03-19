@@ -40,6 +40,10 @@ mom_scared_population = {
 	icon_frame = 3
 }
 
+mom_god_emperor_alive = {
+	diplo_weight_mult = 0.1
+}
+
 mom_god_emperor_dead = {
 	planet_jobs_minerals_produces_mult = -0.10
 	planet_jobs_energy_produces_mult = -0.10
