@@ -1,7 +1,7 @@
 version="2.6.*"
 tags={
-	"Galaxy Generation"
 	"Events"
+	"Galaxy Generation"
 }
 name="More Origins Mod"
 supported_version="2.6.2"
