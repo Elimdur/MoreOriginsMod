@@ -30,13 +30,22 @@ country_event = {
 				limit = {
 					NOR = {
 						any_system_planet = {
-							is_colony = yes
+							is_colonizable = yes
 						}
 						any_system_megastructure = {
 							is_megastructure_type = mom_junction_termini
 							is_megastructure_type = mom_junction_master
 						}
+						any_ship_in_system = {
+							is_ship_class = shipclass_starbase # Empire Check
+						}
+						any_ship_in_system = {
+							is_ship_class = shipclass_military # Levaiathan Check
+						}
 					}
+				}
+				every_system_planet = {
+					surveyed = { set_surveyed = yes surveyor = prevprev }
 				}
 				random_list = {
 					10 = {
@@ -223,7 +232,7 @@ country_event = {
 		event_target:mom_junction_master_system = {
 			change_variable = { which = mom_wormhole_termini_discover_var value = 1 }
 		}
-		random_system = {
+		random_system = { # Generated Wormholes can go anywhere, except another terminus system
 			limit = {
 				NOT = {
 					any_system_megastructure = {

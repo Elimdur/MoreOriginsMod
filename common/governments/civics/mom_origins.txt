@@ -242,7 +242,7 @@ origin_mom_wormhole_junction = {
 	}
 
 	random_weight = {
-		base = 5
+		base = 0
 	}
 	description = "origin_tooltip_mom_wormhole_junction_effects"
 
