@@ -49,6 +49,16 @@ part = {
 	}
 }
 
+# Overcrowded
+part = {
+	location = 0
+	localization = "START_SCREEN_MOM_CROWDED"
+	
+	trigger = {
+		has_origin = origin_mom_crowded
+	}
+}
+
 #Destroyed Climate - Normal
 part = {
 	location = 0
@@ -60,7 +70,7 @@ part = {
 	}
 }
 
-#Destroyed Climate - Normal
+#Destroyed Climate - Hive
 part = {
 	location = 0
 	localization = "START_SCREEN_MOM_DESTROYED_CLIMATE_HIVE"

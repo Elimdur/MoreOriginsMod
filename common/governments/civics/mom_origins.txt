@@ -75,7 +75,7 @@ origin_mom_breakaway_civ = {
 	icon = "gfx/interface/icons/origins/origins_breakaway_civ.dds"
 	picture = GFX_origin_mom_breakaway_civ
 
-	initializer = "mom_house_breakaway_civ"
+	initializer = "mom_breakaway_civ"
 	max_once_global = yes
 
 	playable = {
@@ -147,6 +147,32 @@ origin_mom_god_emperor = {
 	}
 }
 
+origin_mom_crowded = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/unused/origins_unwashed_masses.dds"
+	picture = GFX_origin_mom_crowded
+
+	max_once_global = no
+
+	playable = {
+	}
+
+	possible = {
+		ethics = { NOT { value = ethic_gestalt_consciousness } }
+		civics = { NOT { value = civic_agrarian_idyll }	}
+	}
+
+	description = "origin_tooltip_mom_crowded_effects"
+	flags = { custom_start_screen }
+
+	traits = {
+	}
+	
+	random_weight = {
+		base = 1
+	}
+}
+
 origin_mom_change_starting_planet_class = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_default.dds"
@@ -156,6 +182,9 @@ origin_mom_change_starting_planet_class = {
 
 	potential = {
 		always = no # Disabled, seems too small and irrelevant
+	}
+
+	playable = {
 	}
 
 	possible = {
@@ -181,8 +210,7 @@ origin_mom_climate_destroyed = {
 	
 	max_once_global = yes
 
-	potential = {
-		always = yes
+	playable = {
 	}
 
 	possible = {
@@ -206,8 +234,7 @@ origin_mom_wormhole_junction = {
 	
 	max_once_global = yes
 
-	potential = {
-		always = yes
+	playable = {
 	}
 
 	possible = {
@@ -220,5 +247,4 @@ origin_mom_wormhole_junction = {
 	description = "origin_tooltip_mom_wormhole_junction_effects"
 
 	advanced_start = yes
-
 }
