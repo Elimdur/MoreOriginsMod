@@ -23,4 +23,22 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/origins_eventpictures/origins_mom_exiles.dds"
 		alwaystransparent = yes
 	}
+	
+	spriteType = {
+		name = "GFX_mom_change_planet_class_origin_picture"
+		texturefile = "gfx/event_pictures/origins_eventpictures/origin_mom_change_planet_class_origin_picture.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_mom_climate_destroyed_origin_picture"
+		texturefile = "gfx/event_pictures/origins_eventpictures/origin_mom_climate_destroyed_picture.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_mom_wormhole_junction_picture"
+		texturefile = "gfx/event_pictures/origins_eventpictures/origin_mom_wormhole_junction_picture.dds"
+		alwaystransparent = yes
+	}
 }
