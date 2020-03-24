@@ -27,8 +27,31 @@ building_mom_habitat = {
 	planet_modifier = {
 		planet_housing_add = 15
 		pop_environment_tolerance = 0.15
-		job_mom_job_destroyed_climate_add = 7
 		planet_amenities_add = 10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_mom_destroyed_climate_drone_add = 7
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+		}
+		modifier = {
+			job_mom_destroyed_climate_add = 7
+		}
 	}
 
 	triggered_planet_modifier = {

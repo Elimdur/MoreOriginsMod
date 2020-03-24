@@ -286,22 +286,24 @@
  origin_mom_climate_destroyed: "Destroyed Climate"
  origin_mom_climate_destroyed_desc: "Before the invention of the Hyperdrive, a great disaster struck this civilization's homeworld. While the exact nature of the disaster is unknown, it caused significant alteration to the climate of the planet, causing the climate to change into something that can be deadly for native life."
  origin_tooltip_mom_destroyed_climate_effects: "Homeworld is changed to a planet outside the chosen group. Start with no city districts and a §YClimate Protection Habitat§! building that increases habitability and housing, and the ability to build more on any colony."
- START_SCREEN_MOM_DESTROYED_CLIMATE: "Sometime in our past, [GetHomeWorldName] was altered far outside [ROOT.GetSpeciesName] tolerances. Whether by accident, natural causes, or intentional action has been lost in the years following the disaster. Regardless, the event killed billions of our people, those who could not find shelter or endure [GetHomeWorldName]'s changed climate, the countless who died from starvation as crop yields fell, or those slaughtered in the brutal wars for what remained.\n\n In time, we built domed cities and subterranean catacombs to live in, and eventually we unified beneath a new flag. Now we are ready to take the stars, and we take our knowledge of survival with us."
- START_SCREEN_MOM_DESTROYED_CLIMATE_HIVE: "Sometime in our past, [GetHomeWorldName] was altered far outside [ROOT.GetSpeciesName] tolerances. Whether by accident, natural causes, or intentional action has been lost in the years following the disaster. Regardless, the event killed billions of hive drones, those who could not find shelter or endure [GetHomeWorldName]'s changed climate, the countless who died from starvation as food production fell, or those who slaughtered each other as wounded hive fought to heal and regain control..\n\n In time, we built domed cities and subterranean catacombs to live in, and teh hive healed until once more we covered [GetHomeWorldName]. Now we are ready to take the stars, and we take our knowledge of survival with us.""
+ START_SCREEN_MOM_DESTROYED_CLIMATE: "Sometime in our past, [GetHomeWorldName] was altered far outside [ROOT.GetSpeciesName] tolerances. Whether by accident, natural causes, or intentional action has been lost in the years following the disaster. Regardless, the event killed billions of our people, those who could not find shelter or endure [GetHomeWorldName]'s changed climate, the countless who died from starvation as crop yields fell, or those slaughtered in the brutal wars over what remained.\n\nIn time, we built domed cities and subterranean catacombs to live in, and eventually we unified beneath a new flag. Now we are ready to reach distant stars, and we will take our knowledge of survival with us."
+ START_SCREEN_MOM_DESTROYED_CLIMATE_HIVE: "Sometime in our past, [GetHomeWorldName] was altered far outside [ROOT.GetSpeciesName] tolerances. Whether by accident, natural causes, or intentional action has been lost in the years following the disaster. Regardless, the event killed billions of hive drones, those who could not find shelter or endure [GetHomeWorldName]'s changed climate, the countless who died from starvation as food production fell, or those who slaughtered each other as the wounded hive fought to heal and regain control..\n\nIn time, we built domed cities and subterranean catacombs to live in, and the hive healed until once more we covered [GetHomeWorldName]. Now we are ready to reach the stars, and we will take our knowledge of survival with us."
  
  building_mom_habitat: "Climate Protection Habitat"
  building_mom_habitat_desc: "A massive complex of subterranean tunnels and partially domed cities, offering protection from the harsh environment outside."
- job_mom_job_destroyed_climate: "Habitat Producer"
- job_mom_job_destroyed_climate_desc: "Habitats offer a plentitude of opportunities to mine, generate, and farm."
- mod_job_mom_job_destroyed_climate_add: "Habitat Producer Jobs"
- job_mom_job_destroyed_climate_plural: "Habitat Producers"
- 
+ job_mom_destroyed_climate: "Habitat Producer"
+ job_mom_destroyed_climate_plural: "Habitat Producers"
+ job_mom_destroyed_climate_desc: "Habitats offer a plentitude of opportunities to mine, generate, and farm."
+ job_mom_destroyed_climate_drone: "Habitat Drone"
+ job_mom_destroyed_climate_drone_plural: "Habitat Drones"
+ job_mom_destroyed_climate_drone_desc: "abitats offer a plentitude of opportunities to mine, generate, and farm."
+ mod_job_mom_destroyed_climate_add: "Habitat Producer Jobs"
  
  ###################
  #Wormhole Junction#
  ###################
  origin_mom_wormhole_junction: "Wormhole Junction"
- origin_mom_wormhole_junction_desc: "Abnormal gravitic forces in this civilization's homesystem has caused a wormhole junction to appear. Its termini are in a constant state of flux, appearing and disappearing as the gravitic forces shift. The civilization developed the means to travel through wormhole junctions and managed to stabilized two termini even before they discovered conventional FTL travel."
+ origin_mom_wormhole_junction_desc: "Abnormal gravitic forces in this civilization's home system has caused a wormhole junction to appear. Its termini are in a constant state of flux, appearing and disappearing as the gravitic forces shift. The civilization developed the means to travel through wormhole junctions and managed to stabilized two termini even before they discovered conventional FTL travel."
  origin_tooltip_mom_wormhole_junction_effects: "Start with a wormhole junction with two termini in your home system and the ability to discover more."
  
  
@@ -340,11 +342,9 @@
  mom_junction.7.a: "Wonderful"
  
  mom_junction.8.name: "Last Wormhole Terminus Stabilized"
- mom_junction.8.desc: "We have successfully stabilized another terminus of [mom_junction_master_system.GetName] wormhole junction. This one will transfer ships into the [mom_junction_new_system.GetName] system. Unfortunately, [mom_junction_new_system_master.GetName] scientist have concluded that this is the last terminus of the junction we will be abel to use. The gravitic forces have become to unstable to allow any more wormholes. Still, seven wormholes in one system is pretty good."
+ mom_junction.8.desc: "We have successfully stabilized another terminus of [mom_junction_master_system.GetName] wormhole junction. This one will transfer ships into the [mom_junction_new_system.GetName] system. Unfortunately, [mom_junction_new_system_master.GetName] scientist have concluded that this is the last terminus of the junction we will be able to use. The gravitic forces have become to unstable to allow for any more wormholes. Still, seven wormholes in one system is pretty good."
  mom_junction.8.a: "So They Are. Compliments to All Involved."
 
  #Generate Modifier
  mom_wormhole_junction_modifier: "Stabilizing Wormhole"
  mom_wormhole_junction_modifier_desc: "Our physicists are working to stabilize a wormhole."
- 
- 
