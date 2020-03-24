@@ -1,6 +1,7 @@
-version="2.6.1"
+version="2.6.*"
 tags={
-	"Utilities"
+	"Galaxy Generation"
+	"Events"
 }
-name="More Origins Mod (Development)"
-supported_version="2.6.1"
+name="More Origins Mod"
+supported_version="2.6.2"
