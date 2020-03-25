@@ -39,6 +39,7 @@ country_event = {
 						any_ship_in_system = {
 							is_ship_class = shipclass_starbase # Empire Check
 						}
+						has_star_flag = empire_cluster # To not be too close to other's home system
 						any_ship_in_system = {
 							is_ship_class = shipclass_military # Levaiathan Check
 						}
