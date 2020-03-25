@@ -173,35 +173,35 @@ origin_mom_crowded = {
 	}
 }
 
-origin_mom_change_starting_planet_class = {
-	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_default.dds"
-	picture = GFX_mom_change_planet_class_origin_picture
-
-	max_once_global = yes
-
-	potential = {
-		always = no # Disabled, seems too small and irrelevant
-	}
-
-	playable = {
-	}
-
-	possible = {
-		authority = { NOT = { value = auth_machine_intelligence } }
-	}
-	
-	traits = {
-		trait = trait_mom_changed_class_hab
-	}
-
-	random_weight = {
-		base = 5
-	}
-	description = "origin_tooltip_mom_change_starting_planet_class_effects"
-
-	advanced_start = yes
-}
+#origin_mom_change_starting_planet_class = {
+#	is_origin = yes
+#	icon = "gfx/interface/icons/origins/origins_default.dds"
+#	picture = GFX_mom_change_planet_class_origin_picture
+#
+#	max_once_global = yes
+#
+#	potential = {
+#		always = no # Disabled, seems too small and irrelevant
+#	}
+#
+#	playable = {
+#	}
+#
+#	possible = {
+#		authority = { NOT = { value = auth_machine_intelligence } }
+#	}
+#	
+#	traits = {
+#		trait = trait_mom_changed_class_hab
+#	}
+#
+#	random_weight = {
+#		base = 0
+#	}
+#	description = "origin_tooltip_mom_change_starting_planet_class_effects"
+#
+#	advanced_start = yes
+#}
 
 origin_mom_climate_destroyed = {
 	is_origin = yes
