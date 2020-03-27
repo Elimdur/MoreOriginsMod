@@ -1,0 +1,24 @@
+
+
+# Subsidiary
+mom_subsidiary = {
+	can_expand = yes
+	can_be_integrated = no
+	joins_overlord_wars = no
+	calls_overlord_to_war = yes
+	can_do_diplomacy = yes
+	
+	diplo_threat = 1
+	
+	subject_tax_rate = {
+		energy = 0.2
+		minerals = 0.2
+	}
+	
+	potential = {
+		always = no
+	}
+	effect = {
+		
+	}
+}

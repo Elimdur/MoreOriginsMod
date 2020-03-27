@@ -1,0 +1,346 @@
+namespace = mom_ei
+
+
+event = {
+	id = mom_ei.1
+	is_triggered_only = yes
+	hide_window = yes
+
+
+	trigger = {
+		any_country = {
+			has_origin = origin_mom_prosper_and_profit
+		}
+	}
+
+	immediate = {
+		while = {
+			limit = {
+				any_country = {
+					has_origin = origin_mom_prosper_and_profit
+					NOT = { has_country_flag = mom_east_india }
+				}
+			}
+			random_country = {
+				limit = {
+					has_origin = origin_mom_prosper_and_profit
+					NOT = { has_country_flag = mom_east_india }
+				}
+				set_country_flag = mom_east_india
+				save_event_target_as = mom_east_india_country
+				set_country_flag = first_alien_life
+				set_country_flag = Story3
+				capital_scope = {
+					save_event_target_as = mom_east_india_master_planet
+					solar_system = {
+						closest_system = {
+							limit = {
+								has_owner = no
+							}
+							set_star_flag = mom_east_india_master
+							create_starbase = {
+								size = starbase_starport
+								module = shipyard
+								building = crew_quarters
+								owner = prevprevprev
+								effect = {
+									set_starbase_module = {
+									slot = 1
+									module = trading_hub
+									}
+								}
+							}
+							if = {
+								limit = {
+									any_system_planet = {
+										habitable_planet = yes
+									}
+								}
+								random_system_planet = {
+									limit = { habitable_planet = yes }
+									save_event_target_as = mom_east_india_planet
+									set_planet_size = 16
+									mom_east_india_set_planet_class = yes
+									reroll_planet = yes
+								}
+							}
+							else = {
+								random_system_planet = {
+									limit = {
+										is_ringworld = no
+										is_asteroid = no
+										is_star = no
+										is_moon = no
+									}
+									save_event_target_as = mom_east_india_planet
+									set_planet_size = 16
+									mom_east_india_set_planet_class = yes
+									reroll_planet = yes
+								}
+							}
+						}
+					}
+					event_target:mom_east_india_planet = {
+						solar_system = {
+							generate_home_system_resources = yes
+							every_system_planet = {
+								limit = {
+									has_deposit_for = shipclass_research_station
+									has_research_station = no
+								}
+								create_research_station = {
+									owner = event_target:mom_east_india_country
+								}
+							}
+							every_system_planet = {
+								limit = {
+									has_deposit_for = shipclass_mining_station
+									NOR = {
+										has_deposit = d_exotic_gases_1
+										has_deposit = d_exotic_gases_2
+										has_deposit = d_exotic_gases_3
+										has_deposit = d_exotic_gases_4
+										has_deposit = d_exotic_gases_5
+										has_deposit = d_rare_crystals_1
+										has_deposit = d_rare_crystals_2
+										has_deposit = d_rare_crystals_3
+										has_deposit = d_rare_crystals_4
+										has_deposit = d_rare_crystals_5
+										has_deposit = d_volatile_motes_1
+										has_deposit = d_volatile_motes_2
+										has_deposit = d_volatile_motes_3
+										has_deposit = d_volatile_motes_4
+										has_deposit = d_volatile_motes_5
+									}
+									has_mining_station = no
+								}
+								create_mining_station = {
+									owner = event_target:mom_east_india_country
+								}
+							}
+						}
+						mom_create_east_india_country = yes
+						create_colony = {
+							owner = event_target:mom_east_india_country_master
+						}
+						generate_start_deposits_and_blockers = yes
+						generate_start_buildings_and_districts = yes
+						generate_start_pops = yes
+						solar_system.starbase = {
+							set_owner = event_target:mom_east_india_country_master
+						}
+						add_modifier = { modifier = prosp_uni_mod days = -1 } #Adds Modifier From Origin
+						solar_system = {
+							every_system_planet = {
+								surveyed = {
+									set_surveyed = yes
+									surveyor = event_target:mom_east_india_country_master
+								}
+							}
+						}
+					}
+				}
+				event_target:mom_east_india_country_master = {
+					create_starting_leaders = yes
+					set_name = random
+					#Military has extra to prevent leaving instantly
+					create_fleet = {
+						set_take_point = yes
+						effect = {
+							set_owner = prev
+							while = {
+								count = 6
+								create_ship = {
+									name = random
+									random_existing_design = corvette
+								}
+							}
+							set_location = prev.capital_star
+						}
+					}
+					#science
+					create_fleet = {
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = random
+								random_existing_design = science
+							}
+							set_fleet_stance = evasive
+							#set_location = prev.capital_star
+							set_location = prev.capital_scope.star
+							owner = {
+								create_leader = {
+									class = scientist
+									sub_type = survey
+									name = random
+									species = owner_main_species
+								}
+							}
+							set_leader = last_created_leader
+						}	
+					}
+					#constructor
+					create_fleet = {
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = random
+								random_existing_design = constructor
+							}
+							set_fleet_stance = evasive
+							set_location = prev.capital_star
+						}
+					}
+					if = {
+						limit = {
+							any_system = {
+								has_owner = no
+								NOT = { has_hyperlane_to = capital_scope.solar_system }
+							}
+						}
+						capital_scope.solar_system = { #Makes sure Overlord can expand
+							if = {
+								limit = {
+									NOT = {
+										any_system = {
+											has_owner = yes # NOT makes this no
+											has_hyperlane_to = prev
+										}
+									}
+								}
+								while = {
+									count = 1
+									closest_system = {
+										limit = {
+											has_owner = no
+											NOT = { has_hyperlane_to = prev }
+										}
+										save_event_target_as = mom_east_india_verify_system
+									}
+									add_hyperlane = {
+										from = THIS
+										to = event_target:mom_east_india_verify_system
+									}
+								}
+							}
+						}
+					}
+					if = {# Lore makes no sense if the master is also a megacorp
+						limit = {
+							has_authority = auth_corporate
+							is_egalitarian = no
+							is_authoritarian = no
+						}
+						random_list = {
+							25 = {
+								change_government = {
+									authority = auth_democratic
+									civics = random 
+								}
+							}
+							25 = {
+								change_government = {
+									authority = auth_oligarchic
+									civics = random 
+								}
+							}
+							25 = {
+								change_government = {
+									authority = auth_dictatorial
+									civics = random 
+								}
+							}
+							25 = {
+								change_government = {
+									authority = auth_imperial
+									civics = random 
+								}
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							has_authority = auth_corporate
+							is_authoritarian = yes
+						}
+						random_list = {
+							50 = {
+								change_government = {
+									authority = auth_dictatorial
+									civics = random 
+								}
+							}
+							50 = {
+								change_government = {
+									authority = auth_imperial
+									civics = random 
+								}
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							has_authority = auth_corporate
+							is_egalitarian = yes
+						}
+						change_government = {
+							authority = auth_democratic
+							civics = random 
+						}
+					}
+					else_if = { #Just in case check if master is gestalt
+						limit = {
+							OR = {
+								has_authority = auth_hive_mind
+								has_authority = auth_machine_intelligence
+							}
+						}
+						country_remove_ethic = ethic_gestalt_consciousness
+						country_add_ethic = ethic_authoritarian
+						country_add_ethic = ethic_militarist
+						country_add_ethic = ethic_spiritualist
+						change_government = {
+							authority = auth_imperial
+							civics = random 
+						}
+					}
+					add_opinion_modifier = {
+						who = event_target:mom_east_india_country
+						modifier = opinion_mom_east_india_overlord
+					}
+				}
+				set_subject_of = {
+					who = event_target:mom_east_india_country_master
+					subject_type = mom_subsidiary
+				}
+				capital_scope.solar_system = { #Makes sure Vassal can expand
+					if = {
+						limit = {
+							NOT = {
+								any_system = {
+									has_owner = yes # NOT makes this no
+									has_hyperlane_to = prev
+								}
+							}
+						}
+						while = {
+							count = 2
+							closest_system = {
+								limit = {
+									has_owner = no
+									NOT = { has_hyperlane_to = prev }
+								}
+								save_event_target_as = mom_east_india_verify_system
+							}
+							add_hyperlane = {
+								from = THIS
+								to = event_target:mom_east_india_verify_system
+							}
+						}	
+					}
+				}
+			}
+		}
+	}
+}

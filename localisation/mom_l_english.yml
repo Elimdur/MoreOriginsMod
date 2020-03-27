@@ -298,6 +298,9 @@
  job_mom_destroyed_climate_drone_plural: "Habitat Drones"
  job_mom_destroyed_climate_drone_desc: "abitats offer a plentitude of opportunities to mine, generate, and farm."
  mod_job_mom_destroyed_climate_add: "Habitat Producer Jobs"
+
+ mom_nuked_planet_modifier: "Climate Catastrophe"
+ mom_nuked_planet_modifier_desc: "Something altered the climate of this planet into something its inhabitants are unprepared to deal with."
  
  ###################
  #Wormhole Junction#
@@ -348,3 +351,14 @@
  #Generate Modifier
  mom_wormhole_junction_modifier: "Stabilizing Wormhole"
  mom_wormhole_junction_modifier_desc: "Our physicists are working to stabilize a wormhole."
+
+
+ ####################
+ #Prosper and Profit#
+ ####################
+ origin_mom_prosper_and_profit: "Prosper and Profit"
+ origin_mom_prosper_and_profit_desc: "The borders of our empire grow larger every day and our company has amassed so much wealth and power that we have been given the task of assisting in the colonization of the galaxy. We are free to expand in any way we see fit as long as we do not upset our national government. Unless, of course, we chose to break off from them."
+ origin_tooltip_prosper_and_profit_effects: "Start the game as a subsidiary of another empire of the same species."
+ SUBJECT_mom_subsidiary: "Subsidiary"
+ SUBJECT_DESC_mom_subsidiary: "This subsidiary is mostly independent but pays 20 percent of its minerals and energy credits in taxes."
+ opinion_mom_east_india_overlord: "Overlord"

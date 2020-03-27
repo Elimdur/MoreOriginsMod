@@ -8,6 +8,7 @@ on_game_start = {
 		mom_god_emperor.1
 		mom_crowded.1
 		action.90
+		mom_ei.1
 	}
 }
 
@@ -99,5 +100,11 @@ on_yearly_pulse_country = {
 	events = {
 		mom_god_emperor.6
 		mom_crowded.2
+	}
+}
+
+on_terraforming_complete = {
+	events = {
+		mom_climate.3
 	}
 }

@@ -47,4 +47,9 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/origins_eventpictures/origin_mom_wormhole_junction_picture.dds"
 		alwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_mom_prosper_and_profit"
+		texturefile = "gfx/event_pictures/origins_eventpictures/origins_mom_prosper_and_profit.dds"
+		alwaystransparent = yes
+	}
 }

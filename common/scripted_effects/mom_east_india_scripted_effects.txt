@@ -1,0 +1,90 @@
+mom_east_india_set_planet_class = {
+	if = {
+		limit = {
+			event_target:mom_east_india_master_planet = {
+				is_planet_class = pc_continental
+			}
+		}
+		change_pc = pc_continental
+	}
+	else_if = {
+		limit = {
+			event_target:mom_east_india_master_planet = {
+				is_planet_class = pc_ocean
+			}
+		}
+		change_pc = pc_ocean
+	}
+	else_if = {
+		limit = {
+			event_target:mom_east_india_master_planet = {
+				is_planet_class = pc_tropical
+			}
+		}
+		change_pc = pc_tropical
+	}
+	else_if = {
+		limit = {
+			event_target:mom_east_india_master_planet = {
+				is_planet_class = pc_arid
+			}
+		}
+		change_pc = pc_arid
+	}
+	else_if = {
+		limit = {
+			event_target:mom_east_india_master_planet = {
+				is_planet_class = pc_desert
+			}
+		}
+		change_pc = pc_desert
+	}
+	else_if = {
+		limit = {
+			event_target:mom_east_india_master_planet = {
+				is_planet_class = pc_savannah
+			}
+		}
+		change_pc = pc_savannah
+	}
+	else_if = {
+		limit = {
+			event_target:mom_east_india_master_planet = {
+				is_planet_class = pc_arctic
+			}
+		}
+		change_pc = pc_arctic
+	}
+	else_if = {
+		limit = {
+			event_target:mom_east_india_master_planet = {
+				is_planet_class = pc_tundra
+			}
+		}
+		change_pc = pc_tundra
+	}
+	else_if = {
+		limit = {
+			event_target:mom_east_india_master_planet = {
+				is_planet_class = pc_alpine
+			}
+		}
+		change_pc = pc_alpine
+	}
+}
+
+mom_create_east_india_country = {
+	create_country = {
+		name_list = random
+		species = event_target:mom_east_india_country
+		type = default
+		origin = "origin_default"
+		ignore_initial_colony_error = yes
+		day_zero_contact = no
+		ethos = random
+		effect = {
+			save_event_target_as = mom_east_india_country_master
+			establish_communications_no_message = event_target:mom_east_india_country
+		}
+	}
+}

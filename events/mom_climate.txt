@@ -169,11 +169,34 @@ country_event = {
 					17 = { change_pc = pc_alpine }
 				}
 			}
+			else = {
+				change_pc = pc_nuked
+			}
 			remove_district = district_city
 			remove_district = district_city
 			remove_district = district_city
 			remove_district = district_farming
 			add_building = building_mom_habitat
+			if = {
+				limit = {
+					is_planet_class = pc_nuked
+				}
+				add_modifier = {
+					modifier = mom_nuked_planet_modifier
+					days = -1
+				}
+			}
 		}
+	}
+}
+planet_event = {#If Planet Terraformed, remove nuked modifier
+	id = mom_climate.3
+	hide_window = yes
+	trigger = {
+		has_modifier = mom_nuked_planet_modifier
+	}
+	is_triggered_only = yes
+	immediate = {
+		remove_modifier = mom_nuked_planet_modifier
 	}
 }

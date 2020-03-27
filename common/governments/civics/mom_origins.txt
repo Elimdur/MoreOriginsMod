@@ -248,3 +248,24 @@ origin_mom_wormhole_junction = {
 
 	advanced_start = yes
 }
+
+origin_mom_prosper_and_profit = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/unused/origins_narrow_escape.dds"
+	picture = GFX_mom_prosper_and_profit
+	
+	max_once_global = yes
+
+	playable = {
+	}
+
+	possible = {
+		authority = { value = auth_corporate }
+	}
+
+	random_weight = {
+		base = 5
+	}
+	description = "origin_tooltip_prosper_and_profit_effects"
+
+}

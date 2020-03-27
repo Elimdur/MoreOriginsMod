@@ -76,3 +76,10 @@ mom_crowded_stripmining = {
 mom_wormhole_junction_modifier = {
 	country_physics_tech_research_speed =  -0.1
 }
+
+mom_nuked_planet_modifier = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_wasteland.dds"
+	icon_frame = 1
+	pop_environment_tolerance =  0.20
+	
+}

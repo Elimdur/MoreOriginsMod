@@ -1,0 +1,6 @@
+#Prosper And Profit Overlord
+opinion_mom_east_india_overlord = {
+	opinion = {
+		base = 25
+	}
+}
