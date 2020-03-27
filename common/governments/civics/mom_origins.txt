@@ -267,5 +267,6 @@ origin_mom_prosper_and_profit = {
 		base = 5
 	}
 	description = "origin_tooltip_prosper_and_profit_effects"
+	flags = { custom_start_screen }
 
 }

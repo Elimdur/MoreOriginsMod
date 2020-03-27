@@ -80,3 +80,13 @@ part = {
 		has_authority = auth_hive_mind
 	}
 }
+
+#Prosper and Profit
+part = {
+	location = 0
+	localization = "START_SCREEN_MOM_PROSPER_AND_PROFIT"
+	
+	trigger = {
+		has_origin = origin_mom_prosper_and_profit
+	}
+}

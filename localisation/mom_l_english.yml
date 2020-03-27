@@ -51,11 +51,22 @@
  origin_tooltip_mom_destroyed_climate_effects:0 "Homeworld is changed to a planet outside the chosen group. Start with no city districts and a §YClimate Protection Habitat§! building that increases habitability and housing, and the ability to build more on any colony."
  START_SCREEN_MOM_DESTROYED_CLIMATE:0 "Sometime in our past, [GetHomeWorldName] was altered far outside [ROOT.GetSpeciesName] tolerances. Whether by accident, natural causes, or intentional action has been lost in the years following the disaster. Regardless, the event killed billions of our people, those who could not find shelter or endure [GetHomeWorldName]'s changed climate, the countless who died from starvation as crop yields fell, or those slaughtered in the brutal wars over what remained.\n\nIn time, we built domed cities and subterranean catacombs to live in, and eventually we unified beneath a new flag. Now we are ready to reach distant stars, and we will take our knowledge of survival with us."
  START_SCREEN_MOM_DESTROYED_CLIMATE_HIVE:0 "Sometime in our past, [GetHomeWorldName] was altered far outside [ROOT.GetSpeciesName] tolerances. Whether by accident, natural causes, or intentional action has been lost in the years following the disaster. Regardless, the event killed billions of hive drones, those who could not find shelter or endure [GetHomeWorldName]'s changed climate, the countless who died from starvation as food production fell, or those who slaughtered each other as the wounded hive fought to heal and regain control..\n\nIn time, we built domed cities and subterranean catacombs to live in, and the hive healed until once more we covered [GetHomeWorldName]. Now we are ready to reach the stars, and we will take our knowledge of survival with us."
+ mom_nuked_planet_modifier:0 "Climate Catastrophe"
+ mom_nuked_planet_modifier_desc:0 "Something altered the climate of this planet into something its inhabitants are unprepared to deal with."
 
  # Wormhole Junction Localisation
  origin_mom_wormhole_junction:0 "Wormhole Junction"
  origin_mom_wormhole_junction_desc:0 "Abnormal gravitic forces in this civilization's home system has caused a wormhole junction to appear. Its termini are in a constant state of flux, appearing and disappearing as the gravitic forces shift. The civilization developed the means to travel through wormhole junctions and managed to stabilized two termini even before they discovered conventional FTL travel."
  origin_tooltip_mom_wormhole_junction_effects:0 "Start with a wormhole junction with two termini in your home system and the ability to discover more."
+
+ #Prosper and Profit Localisation
+ origin_mom_prosper_and_profit:0 "Prosper and Profit"
+ origin_mom_prosper_and_profit_desc:0 "The borders of our empire grow larger every day and our company has amassed so much wealth and power that we have been given the task of assisting in the colonization of the galaxy. We are free to expand in any way we see fit as long as we do not upset the national government. Unless, of course, we chose to break off from them."
+ origin_tooltip_prosper_and_profit_effects:0 "Start the game as a subsidiary of another empire of the same species."
+ SUBJECT_mom_subsidiary:0 "Subsidiary"
+ SUBJECT_DESC_mom_subsidiary:0 "This subsidiary is mostly independent but pays 20 percent of its minerals and energy credits in taxes."
+ opinion_mom_east_india_overlord:0 "Overlord"
+ START_SCREEN_MOM_PROSPER_AND_PROFIT:0 "Our corporation started off small, just one more factor in the ever changing [Root.GetSpeciesName] market. Yet while other companies came and went, we endured, survived, thrived. The world government was forced to take notice, and offered us a proposition, join them as a subsidiary in exchange for more freedoms. We accepted and were granted unprecedented power. The ability to build and maintain a private military, to declare war and seize land. As time wore on, we became stronger and stronger. When [Root.GetSpeciesName] scientists found the hyperplane network, and invented the proto-hyperdrive, our company was the first to get contracts for a new world, [GetHomeWorldName].\n\nBy the time our first colonists had settled and built up a working infrastructure, hyperdrive technology had advanced to the point where galactic expansion was a practical goal. We moved our headquarters to [GetHomeWorldName] and from there the motherworld government invited us to join them in securing the stars. Now, protected by their might, and our own, we will take the stars for [Root.GetSpeciesName] prosperity, and [Root.GetSpeciesName] profit. "
  
  ####################
  # Overcrowded      #
@@ -293,28 +304,9 @@
  
  trait_mom_changed_class_hab:0 "Survivor"
  trait_mom_changed_class_hab_desc:0 "This species survived a environmental change on their homeworld, and have become adept at surviving foreign environments."
- 
- ###################
- #Climate Destroyed#
- ###################
- origin_mom_climate_destroyed: "Destroyed Climate"
- origin_mom_climate_destroyed_desc: "Before the invention of the Hyperdrive, a great disaster struck this civilization's homeworld. While the exact nature of the disaster is unknown, it caused significant alteration to the climate of the planet, causing the climate to change into something that can be deadly for native life."
- origin_tooltip_mom_destroyed_climate_effects: "Homeworld is changed to a planet outside the chosen group. Start with no city districts and a §YClimate Protection Habitat§! building that increases habitability and housing, and the ability to build more on any colony."
- START_SCREEN_MOM_DESTROYED_CLIMATE: "Sometime in our past, [GetHomeWorldName] was altered far outside [ROOT.GetSpeciesName] tolerances. Whether by accident, natural causes, or intentional action has been lost in the years following the disaster. Regardless, the event killed billions of our people, those who could not find shelter or endure [GetHomeWorldName]'s changed climate, the countless who died from starvation as crop yields fell, or those slaughtered in the brutal wars over what remained.\n\nIn time, we built domed cities and subterranean catacombs to live in, and eventually we unified beneath a new flag. Now we are ready to reach distant stars, and we will take our knowledge of survival with us."
- START_SCREEN_MOM_DESTROYED_CLIMATE_HIVE: "Sometime in our past, [GetHomeWorldName] was altered far outside [ROOT.GetSpeciesName] tolerances. Whether by accident, natural causes, or intentional action has been lost in the years following the disaster. Regardless, the event killed billions of hive drones, those who could not find shelter or endure [GetHomeWorldName]'s changed climate, the countless who died from starvation as food production fell, or those who slaughtered each other as the wounded hive fought to heal and regain control..\n\nIn time, we built domed cities and subterranean catacombs to live in, and the hive healed until once more we covered [GetHomeWorldName]. Now we are ready to reach the stars, and we will take our knowledge of survival with us."
- 
- building_mom_habitat: "Climate Protection Habitat"
- building_mom_habitat_desc: "A massive complex of subterranean tunnels and partially domed cities, offering protection from the harsh environment outside."
- job_mom_destroyed_climate: "Habitat Producer"
- job_mom_destroyed_climate_plural: "Habitat Producers"
- job_mom_destroyed_climate_desc: "Habitats offer a plentitude of opportunities to mine, generate, and farm."
- job_mom_destroyed_climate_drone: "Habitat Drone"
- job_mom_destroyed_climate_drone_plural: "Habitat Drones"
- job_mom_destroyed_climate_drone_desc: "abitats offer a plentitude of opportunities to mine, generate, and farm."
- mod_job_mom_destroyed_climate_add: "Habitat Producer Jobs"
 
- mom_nuked_planet_modifier: "Climate Catastrophe"
- mom_nuked_planet_modifier_desc: "Something altered the climate of this planet into something its inhabitants are unprepared to deal with."
+ 
+
  #####################
  #Climate Catastrophe#
  #####################
@@ -326,7 +318,7 @@
  job_mom_destroyed_climate_desc:0 "Habitats offer a plentitude of opportunities to mine, generate, and farm."
  job_mom_destroyed_climate_drone:0 "Habitat Drone"
  job_mom_destroyed_climate_drone_plural:0 "Habitat Drones"
- job_mom_destroyed_climate_drone_desc:0 "abitats offer a plentitude of opportunities to mine, generate, and farm."
+ job_mom_destroyed_climate_drone_desc:0 "Habitats offer a plentitude of opportunities to mine, generate, and farm."
  mod_job_mom_destroyed_climate_add:0 "Habitat Producer Jobs"
  
  ###################
@@ -376,13 +368,5 @@
  mom_wormhole_junction_modifier_desc:0 "Our physicists are working to stabilize a wormhole."
 
 
- ####################
- #Prosper and Profit#
- ####################
- origin_mom_prosper_and_profit:0 "Prosper and Profit"
- origin_mom_prosper_and_profit_desc:0 "The borders of our empire grow larger every day and our company has amassed so much wealth and power that we have been given the task of assisting in the colonization of the galaxy. We are free to expand in any way we see fit as long as we do not upset our national government. Unless, of course, we chose to break off from them."
- origin_tooltip_prosper_and_profit_effects:0 "Start the game as a subsidiary of another empire of the same species."
- SUBJECT_mom_subsidiary:0 "Subsidiary"
- SUBJECT_DESC_mom_subsidiary:0 "This subsidiary is mostly independent but pays 20 percent of its minerals and energy credits in taxes."
- opinion_mom_east_india_overlord:0 "Overlord"
+
  
