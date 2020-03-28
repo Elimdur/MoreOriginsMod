@@ -92,7 +92,7 @@ event = {
 									owner = event_target:mom_east_india_country
 								}
 							}
-							every_system_planet = {
+							every_system_planet = { # Avoids T3 Resources in the begining
 								limit = {
 									has_deposit_for = shipclass_mining_station
 									NOR = {
@@ -228,7 +228,7 @@ event = {
 					}
 					if = {# Lore makes no sense if the master is also a megacorp
 						limit = {
-							has_authority = auth_corporate
+							is_megacorp = yes
 							is_egalitarian = no
 							is_authoritarian = no
 						}
@@ -261,7 +261,7 @@ event = {
 					}
 					else_if = {
 						limit = {
-							has_authority = auth_corporate
+							is_megacorp = yes
 							is_authoritarian = yes
 						}
 						random_list = {
@@ -281,7 +281,7 @@ event = {
 					}
 					else_if = {
 						limit = {
-							has_authority = auth_corporate
+							is_megacorp = yes
 							is_egalitarian = yes
 						}
 						change_government = {
