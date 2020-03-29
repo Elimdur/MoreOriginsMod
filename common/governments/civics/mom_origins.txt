@@ -176,7 +176,7 @@ origin_mom_crowded = {
 #origin_mom_change_starting_planet_class = {
 #	is_origin = yes
 #	icon = "gfx/interface/icons/origins/origins_default.dds"
-#	picture = GFX_mom_change_planet_class_origin_picture
+#	picture = GFX_origin_mom_change_planet_class
 #
 #	max_once_global = yes
 #
@@ -206,7 +206,7 @@ origin_mom_crowded = {
 origin_mom_climate_destroyed = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_default.dds"
-	picture = GFX_mom_change_planet_class_origin_picture
+	picture = GFX_origin_mom_change_planet_class
 	
 	max_once_global = yes
 
@@ -230,7 +230,7 @@ origin_mom_climate_destroyed = {
 origin_mom_wormhole_junction = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/unused/origins_eldest_sibling.dds"
-	picture = GFX_mom_wormhole_junction_picture
+	picture = GFX_origin_mom_wormhole_junction
 	
 	max_once_global = yes
 
