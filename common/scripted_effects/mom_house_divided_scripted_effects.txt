@@ -314,7 +314,7 @@ mom_house_divided_communication_colonies = {
 		}
 		add_opinion_modifier = {
 			who = prev
-			modifier = opinion_broke_away_from
+			modifier = opinion_broke_alliance
 		}
 	}
 	add_opinion_modifier = {
@@ -323,7 +323,7 @@ mom_house_divided_communication_colonies = {
 	}
 	add_opinion_modifier = {
 		who = event_target:mom_house_divided_defector_1
-		modifier = opinion_broke_away_from
+		modifier = opinion_broke_alliance
 	}
 }
 
