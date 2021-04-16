@@ -52,7 +52,7 @@ mom_exiles_system = {
 			}
 			create_ambient_object = {
 				type = "mom_exiles_destroyed_ring_01_object"
-				location = FROM
+				location = THIS
 			}
 			last_created_ambient_object = {
                 set_location = {
