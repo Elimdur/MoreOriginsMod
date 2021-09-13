@@ -10,7 +10,7 @@ origin_mom_house_divided = {
 	}
 
 	possible = {
-		ethics = { NOR { value = ethic_pacifist value = ethic_fanatic_pacifist value = ethic_gestalt_consciousness } }
+		ethics = { NOR = { value = ethic_pacifist value = ethic_fanatic_pacifist value = ethic_gestalt_consciousness } }
 	}
 
 	description = "origin_tooltip_mom_house_divided_effects"
@@ -56,7 +56,7 @@ origin_mom_severance = {
 	}
 
 	possible = {
-		ethics = { NOT { value = ethic_gestalt_consciousness } }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
 	}
 
 	description = "origin_tooltip_mom_severance_effects"
@@ -83,7 +83,7 @@ origin_mom_breakaway_civ = {
 	}
 
 	possible = {
-		authority = { NOR { value = auth_corporate value = auth_hive_mind value = auth_machine_intelligence} }
+		authority = { NOR = { value = auth_corporate value = auth_hive_mind value = auth_machine_intelligence} }
 	}
 
 	description = "origin_tooltip_mom_breakaway_civ_effects"
@@ -108,7 +108,7 @@ origin_mom_exiles = {
 	}
 
 	possible = {
-		ethics = { NOT { value = ethic_gestalt_consciousness } }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
 	}
 
 	description = "origin_tooltip_mom_exiles_effects"
@@ -133,7 +133,7 @@ origin_mom_god_emperor = {
 	}
 
 	possible = {
-		authority = { OR { value = auth_dictatorial value = auth_imperial } }
+		authority = { OR = { value = auth_dictatorial value = auth_imperial } }
 	}
 
 	description = "origin_tooltip_mom_god_emperor_effects"
@@ -158,8 +158,8 @@ origin_mom_crowded = {
 	}
 
 	possible = {
-		ethics = { NOT { value = ethic_gestalt_consciousness } }
-		civics = { NOT { value = civic_agrarian_idyll }	}
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		civics = { NOT = { value = civic_agrarian_idyll }	}
 	}
 
 	description = "origin_tooltip_mom_crowded_effects"
@@ -247,4 +247,53 @@ origin_mom_wormhole_junction = {
 	description = "origin_tooltip_mom_wormhole_junction_effects"
 
 	advanced_start = yes
+}
+
+origin_mom_defectors = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_mom_defectors.dds"
+	picture = GFX_origin_mom_defectors
+
+	max_once_global = yes
+
+	playable = {
+		
+	}
+
+	possible = {
+		authority = {
+			value = auth_machine_intelligence
+		}
+		civics = {
+			NOR = {
+				value = civic_machine_terminator
+				value = civic_machine_assimilator
+			}
+		}
+	}
+
+	random_weight = {
+		base = 5
+	}
+	description = "oriign_tooltip_mom_defectors_effects"
+
+	advanced_start = no
+}
+
+origin_mom_defectors_organics = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/unused/origins_unused_narrow_escape.dds"
+
+	playable = {
+		always = no
+	}
+}
+
+origin_mom_defectors_foe = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_separatists.dds"
+
+	playable = {
+		always = no
+	}
 }
