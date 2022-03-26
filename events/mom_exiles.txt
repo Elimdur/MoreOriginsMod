@@ -340,24 +340,24 @@ planet_event = {
 			}
 			create_army = {
 				name = "Ancient Horrors"
-				owner = last_created
+				owner = last_created_country
 				type = "mom_ancient_horrors"
 			}
 			create_army = {
 				name = "Ancient Horrors"
-				owner = last_created
+				owner = last_created_country
 				type = "mom_ancient_horrors"
 			}
 			create_army = {
 				name = "Ancient Horrors"
-				owner = last_created
+				owner = last_created_country
 				type = "mom_ancient_horrors"
 			}
 		}
 		else = {
 			create_army = {
 				name = "Ancient Horrors"
-				owner = last_created
+				owner = last_created_country
 				type = "mom_ancient_horrors"
 			}
 		}
@@ -642,39 +642,39 @@ planet_event = {
 			}
 			create_army = {
 				name = "Ancient Horrors"
-				owner = last_created
+				owner = last_created_country
 				type = "mom_ancient_horrors"
 			}
 			create_army = {
 				name = "Ancient Horrors"
-				owner = last_created
+				owner = last_created_country
 				type = "mom_ancient_horrors"
 			}
 			create_army = {
 				name = "Ancient Horrors"
-				owner = last_created
+				owner = last_created_country
 				type = "mom_ancient_horrors"
 			}
 			create_army = {
 				name = "Ancient Horrors"
-				owner = last_created
+				owner = last_created_country
 				type = "mom_ancient_horrors"
 			}
 			create_army = {
 				name = "Ancient Horrors"
-				owner = last_created
+				owner = last_created_country
 				type = "mom_ancient_horrors"
 			}
 			create_army = {
 				name = "Ancient Horrors"
-				owner = last_created
+				owner = last_created_country
 				type = "mom_ancient_horrors"
 			}
 		}
 		else = {
 			create_army = {
 				name = "Ancient Horrors"
-				owner = last_created
+				owner = last_created_country
 				type = "mom_ancient_horrors"
 			}
 		}
