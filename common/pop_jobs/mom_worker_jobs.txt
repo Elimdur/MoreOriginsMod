@@ -8,15 +8,10 @@ mom_destroyed_climate = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
+		is_sapient = yes
 	}
 
-	possible = {
-		hidden_trigger = { exists = owner }
-		worker_job_check_trigger = yes
-		owner = {
-			is_gestalt = no
-		}
-	}
+	possible_precalc = can_fill_worker_job
 
 	resources = {
 		category = planet_miners
@@ -116,17 +111,13 @@ mom_destroyed_climate_drone = {
 
 	possible_pre_triggers = {
 		has_owner = yes
+		is_enslaved = no
 		is_being_purged = no
 		is_being_assimilated = no
+		is_sapient = yes
 	}
 
-	possible = {
-		hidden_trigger = { exists = owner }
-		worker_job_check_trigger = yes
-		owner = {
-			is_gestalt = yes
-		}
-	}
+	possible_precalc = can_fill_drone_job
 
 	resources = {
 		category = planet_miners

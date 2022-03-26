@@ -304,7 +304,7 @@ planet_event = {
 	desc = mom_god_emperor.7.desc
 	picture = GFX_evt_clones
 	show_sound = event_laboratory_sound
-	location = capital_scope
+	location = owner.capital_scope
 	is_triggered_only = yes
 
 	immediate = {
