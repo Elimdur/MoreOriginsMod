@@ -71,10 +71,11 @@ ship_event = {
 	location = root
 	
 	trigger = {
+		exists = controller
 		FROM = { # system
 			has_star_flag = mom_exiles_system
 		}
-		owner = { # Country
+		controller = { # Country
 			has_event_chain = mom_exiles
 			NOT = {
 				has_country_flag = mom_exiles_system_found
@@ -90,7 +91,7 @@ ship_event = {
 			}
 		}
 
-		owner = {
+		controller = {
 			set_country_flag = mom_exiles_system_found
 			remove_point_of_interest = mom_exiles_system.1
 		}
@@ -98,7 +99,7 @@ ship_event = {
 	
 	option = {
 		name = mom_exiles.3.a
-		owner = {
+		controller = {
 			end_event_chain = "mom_exiles"
 			begin_event_chain = {
 				event_chain = "mom_exiles_planet"

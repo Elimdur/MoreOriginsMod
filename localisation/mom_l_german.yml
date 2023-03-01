@@ -308,7 +308,7 @@
  job_mom_destroyed_climate_desc:0 "Habitats offer a plentitude of opportunities to mine, generate, and farm."
  job_mom_destroyed_climate_drone:0 "Habitat Drone"
  job_mom_destroyed_climate_drone_plural:0 "Habitat Drones"
- job_mom_destroyed_climate_drone_desc:0 "abitats offer a plentitude of opportunities to mine, generate, and farm."
+ job_mom_destroyed_climate_drone_desc:0 "Habitats offer a plentitude of opportunities to mine, generate, and farm."
  mod_job_mom_destroyed_climate_add:0 "Habitat Producer Jobs"
  
  ###################
