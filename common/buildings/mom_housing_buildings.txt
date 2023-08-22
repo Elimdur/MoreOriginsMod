@@ -17,7 +17,7 @@ building_mom_habitat = {
 	}
 
 	allow = {
-		buildings_simple_allow = yes
+		always = yes
 	}
 
 	destroy_trigger = {

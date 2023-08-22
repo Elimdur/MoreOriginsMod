@@ -4,5 +4,5 @@ tags={
 	"Galaxy Generation"
 }
 name="More Origins Mod"
-supported_version="3.3.*"
+supported_version="3.8.*"
 remote_file_id="2025131190"

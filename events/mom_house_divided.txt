@@ -171,6 +171,9 @@ event = {
 						limit = {
 							has_planet_flag = mom_house_divided_colony_1
 						}
+						star = {
+							save_event_target_as = star_name_1
+						}
 						set_planet_flag = mom_house_divided_colony_1_fire_se
 						create_colony = {
 							owner = event_target:mom_house_divided_country
@@ -193,6 +196,7 @@ event = {
 						limit = {
 							has_planet_flag = mom_house_divided_colony_2
 						}
+						save_event_target_as = colony_name_2
 						set_planet_flag = mom_house_divided_colony_2_fire_se
 						create_colony = {
 							owner = event_target:mom_house_divided_country

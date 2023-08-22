@@ -14,7 +14,7 @@ on_game_start = {
 #This = country
 on_game_start_country = {
 	events = {
-		mom_climate.1
+#		mom_climate.1
 		mom_climate.2
 		mom_junction.1
 	}
@@ -98,6 +98,7 @@ on_leader_death = {
 on_yearly_pulse_country = {
 	events = {
 		mom_god_emperor.6
+		mom_god_emperor.9
 		mom_crowded.2
 	}
 }

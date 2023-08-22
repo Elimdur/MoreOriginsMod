@@ -1,4 +1,4 @@
-﻿l_spanish:
+﻿l_korean:
 
  # House Divided Localisation
  origin_mom_house_divided:0 "A House Divided"
@@ -11,6 +11,13 @@
  mom_house_divided_system_DESC:0 "An ordinary start in a unary solar system."
  mom_house_divided_sol_system_NAME:0 "A House Divided - SOL"
  mom_house_divided_sol_system_DESC:0 "A Sol clone to work with A House Divided."
+ #Splinter Nations
+ NAME_mom_house_divided_dictatorial_1:0 "[star_name_1.GetName] Directorate"
+ NAME_mom_house_divided_dictatorial_2:0 "Hierarchy of [colony_name_2.GetName]"
+ NAME_mom_house_divided_democratic_1:0 "[star_name_1.GetName] Federation"
+ NAME_mom_house_divided_democratic_2:0 "Congressional Republic of [colony_name_2.GetName]"
+ NAME_mom_house_divided_cultist_1:0 "Ecclesiarchy of [star_name_1.GetName]"
+ NAME_mom_house_divided_cultist_2:0 "Conclave of [colony_name_2.GetName]"
 
  # Severance Localisation
  origin_mom_severance:0 "Severance"
