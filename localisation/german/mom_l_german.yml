@@ -66,6 +66,8 @@
  origin_mom_wormhole_junction:0 "Wormhole Junction"
  origin_mom_wormhole_junction_desc:0 "Abnormal gravitic forces in this civilization's home system has caused a wormhole junction to appear. Its termini are in a constant state of flux, appearing and disappearing as the gravitic forces shift. The civilization developed the means to travel through wormhole junctions and managed to stabilized two termini even before they discovered conventional FTL travel."
  origin_tooltip_mom_wormhole_junction_effects:0 "Start with a wormhole junction with two termini in your home system and the ability to discover more."
+ mom_junction_master_MEGASTRUCTURE_DETAILS:0 ""
+ mom_junction_termini_MEGASTRUCTURE_DETAILS:0 ""
  
  ####################
  # Overcrowded      #
@@ -316,7 +318,8 @@
  job_mom_destroyed_climate_drone:0 "Habitat Drone"
  job_mom_destroyed_climate_drone_plural:0 "Habitat Drones"
  job_mom_destroyed_climate_drone_desc:0 "Habitats offer a plentitude of opportunities to mine, generate, and farm."
- mod_job_mom_destroyed_climate_add:0 "Habitat Producer Jobs"
+ mod_job_mom_destroyed_climate_add:0 "$job_mom_destroyed_climate$ Jobs"
+ mod_job_mom_destroyed_climate_drone_add:0 "$job_mom_destroyed_climate_drone$ Jobs"
  
  ###################
  #Wormhole Junction#

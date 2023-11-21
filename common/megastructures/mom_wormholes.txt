@@ -3,8 +3,9 @@ mom_junction_master = {
 	portrait = "GFX_evt_wormhole"
 	entity_offset = { x = 0 y = 0 }
 	place_entity_on_planet_plane = no
-	construction_blocks_others = no
+	construction_blocks_and_blocked_by = none
 	show_galactic_map_icon = no
+	show_in_outliner = no
 	bypass_type = mom_junction
 	potential = { always = no }
 	possible = { always = no }
@@ -16,8 +17,9 @@ mom_junction_termini = {
 	portrait = "GFX_evt_wormhole"
 	entity_offset = { x = 0 y = 0 }
 	place_entity_on_planet_plane = no
-	construction_blocks_others = no
+	construction_blocks_and_blocked_by = none
 	show_galactic_map_icon = no
+	show_in_outliner = no
 	bypass_type = mom_junction
 	potential = { always = no }
 	possible = { always = no }

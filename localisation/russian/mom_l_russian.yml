@@ -65,6 +65,8 @@
  origin_mom_wormhole_junction:0 "Wormhole Junction"
  origin_mom_wormhole_junction_desc:0 "Аномальные гравитационные силы в домашней системе этой цивилизации привели к появлению червоточины. Её точка выхода находится в постоянной флуктуации, появляясь и исчезая по мере изменения гравитационных сил. Цивилизация разработала средства для путешествий через червоточины и сумела стабилизировать две точки выхода еще до открытия обычных сверхсветовых путешествий."
  origin_tooltip_mom_wormhole_junction_effects:0 "Начните с червоточиной в вашей домашней системе с двумя точками выхода и возможностью открыть дополнительные."
+ mom_junction_master_MEGASTRUCTURE_DETAILS:0 ""
+ mom_junction_termini_MEGASTRUCTURE_DETAILS:0 ""
  
  ####################
  # Overcrowded      #
@@ -318,7 +320,8 @@
  job_mom_destroyed_climate_drone:0 "Habitat Drone"
  job_mom_destroyed_climate_drone_plural:0 "Habitat Drones"
  job_mom_destroyed_climate_drone_desc:0 "Среда обитания изобилует множеством возможностей для добычи руды, энергогенерации и ведения сельского хозяйства."
- mod_job_mom_destroyed_climate_add:0 "Habitat Producer Jobs"
+ mod_job_mom_destroyed_climate_add:0 "$job_mom_destroyed_climate$ Jobs"
+ mod_job_mom_destroyed_climate_drone_add:0 "$job_mom_destroyed_climate_drone$ Jobs"
  
  ###################
  #Wormhole Junction#

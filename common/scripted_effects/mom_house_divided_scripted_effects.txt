@@ -36,7 +36,7 @@ create_mom_hd_warlike_defector_1 = {
 	create_country = {
 		name = {
 			key = NAME_mom_house_divided_dictatorial_1
-			variable_string = "[star_name_1.GetName]"
+			variable_string = "\\[star_name_1.GetName\\]"
 		}
 		authority = auth_dictatorial
 		civics = {
@@ -66,7 +66,7 @@ create_mom_hd_warlike_defector_2 = {
 	create_country = {
 		name = {
 			key = NAME_mom_house_divided_dictatorial_2
-			variable_string = "[colony_name_2.GetName]"
+			variable_string = "\\[colony_name_2.GetName\\]"
 		}
 		authority = auth_dictatorial
 		civics = {
@@ -96,7 +96,7 @@ create_mom_hd_peaceful_defector_1 = {
 	create_country = {
 		name = {
 			key = NAME_mom_house_divided_democratic_1
-			variable_string = "[star_name_1.GetName]"
+			variable_string = "\\[star_name_1.GetName\\]"
 		}
 		authority = auth_democratic
 		civics = {
@@ -127,7 +127,7 @@ create_mom_hd_peaceful_defector_2 = {
 	create_country = {
 		name = {
 			key = NAME_mom_house_divided_democratic_2
-			variable_string = "[colony_name_2.GetName]"
+			variable_string = "\\[colony_name_2.GetName\\]"
 		}
 		authority = auth_democratic
 		civics = {
@@ -158,7 +158,7 @@ create_mom_hd_cultist_defector_1 = {
 	create_country = {
 		name = {
 			key = NAME_mom_house_divided_cultist_1
-			variable_string = "[star_name_1.GetName]"
+			variable_string = "\\[star_name_1.GetName\\]"
 		}
 		authority = auth_oligarchic
 		civics = {
@@ -188,7 +188,7 @@ create_mom_hd_cultist_defector_2 = {
 	create_country = {
 		name = {
 			key = NAME_mom_house_divided_cultist_2
-			variable_string = "[colony_name_2.GetName]"
+			variable_string = "\\[colony_name_2.GetName\\]"
 		}
 		authority = auth_oligarchic
 		civics = {

@@ -26,7 +26,7 @@ event = {
 					count = 4
 					random_owned_pop = {
 						limit = {
-							has_job = unemployed
+							is_unemployed = yes
 						}
 						kill_pop = yes
 					}
