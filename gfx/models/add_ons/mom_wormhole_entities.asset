@@ -11,7 +11,7 @@ entity = {
 
 	default_state = "idle"
 	state = { name = "idle" animation = "idle"
-		event = { time = 0 node = "root2" particle = "ehof_portal_inner_effect_particle" keep_particle = yes trigger_once = yes }
+		#event = { time = 0 node = "root2" particle = "ehof_portal_inner_effect_particle" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "clock_12_locator" particle = "portal_effect_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "ex_dimensional_portal_thunder" } }
 		event = { time = 0 node = "clock_3_locator" particle = "portal_effect_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "ex_dimensional_portal_thunder" } }
 		event = { time = 0 node = "clock_6_locator" particle = "portal_effect_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "ex_dimensional_portal_thunder" } }
@@ -33,7 +33,7 @@ entity = {
 
 	default_state = "idle"
 	state = { name = "idle" animation = "idle"
-		event = { time = 0 node = "root2" particle = "ehof_portal_inner_effect_particle" keep_particle = yes trigger_once = yes }
+		#event = { time = 0 node = "root2" particle = "ehof_portal_inner_effect_particle" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "clock_12_locator" particle = "portal_effect_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "ex_dimensional_portal_thunder" } }
 		event = { time = 0 node = "clock_3_locator" particle = "portal_effect_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "ex_dimensional_portal_thunder" } }
 		event = { time = 0 node = "clock_6_locator" particle = "portal_effect_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "ex_dimensional_portal_thunder" } }
@@ -52,7 +52,7 @@ entity = {
 
 	default_state = "idle"
 	state = { name = "idle" animation = "idle"
-		event = { time = 0 node = "root2" particle = "ehof_portal_inner_effect_particle" keep_particle = yes trigger_once = yes }
+		#event = { time = 0 node = "root2" particle = "ehof_portal_inner_effect_particle" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "clock_12_locator" particle = "portal_effect_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "ex_dimensional_portal_thunder" } }
 		event = { time = 0 node = "clock_3_locator" particle = "portal_effect_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "ex_dimensional_portal_thunder" } }
 		event = { time = 0 node = "clock_6_locator" particle = "portal_effect_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "ex_dimensional_portal_thunder" } }
