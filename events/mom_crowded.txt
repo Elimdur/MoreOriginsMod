@@ -23,14 +23,16 @@ event = {
 					}
 				}
 				set_country_flag = mom_crowded_setup
-				give_technology = {
-					tech = tech_housing_1
-					message = no
-				}
-				give_technology = {
-					tech = tech_housing_2
-					message = no
-				}
+				add_research_option = tech_housing_1
+				add_research_option = tech_housing_2
+				# give_technology = {
+				# 	tech = tech_housing_1
+				# 	message = no
+				# }
+				# give_technology = {
+				# 	tech = tech_housing_2
+				# 	message = no
+				# }
 				capital_scope = {
 					set_planet_flag = mom_crowded_planet
 					solar_system = {

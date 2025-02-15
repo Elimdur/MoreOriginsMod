@@ -155,8 +155,8 @@
  mom_exiles_system.2.desc:0 "What happened here?"
  
  #Domum has been surveyed, starts surface expedition research project.
- mom_exiles.4.name:0 "[root.owner.species.GetAdj] Origins"
- mom_exiles.4.desc:0 "A heavily damaged gigantic ring orbits a planet covered in dense clouds. High radiation values are measured by our probes.\n\nSo the legends were true indeed. What we already believed became a certainty when our scientists found a small object orbiting the planet. It was identified as an ancient lifepod - in it the remains of its unfortunate passenger, apparently [root.owner.species.GetAdj].\n\nWhatever happened here happened long ago. There is no sign of intelligent life on the planet or in the system at large. Whoever our ancestors' foes were, they seem long gone as well."
+ mom_exiles.4.name:0 "[From.species.GetAdj] Origins"
+ mom_exiles.4.desc:0 "A heavily damaged gigantic ring orbits a planet covered in dense clouds. High radiation values are measured by our probes.\n\nSo the legends were true indeed. What we already believed became a certainty when our scientists found a small object orbiting the planet. It was identified as an ancient lifepod - in it the remains of its unfortunate passenger, apparently [From.species.GetAdj].\n\nWhatever happened here happened long ago. There is no sign of intelligent life on the planet or in the system at large. Whoever our ancestors' foes were, they seem long gone as well."
  mom_exiles.4.a:0 "We need to find out more."
 
  #Domum Surface Expedition Research

@@ -116,28 +116,30 @@ ship_event = {
 }
 
 #Fired when mom_exiles_planet is surveyed
-ship_event = {
+# A country has gained a surveyed status on a planet. Happens after "on_survey_planet" if a science ship surveyed a planet. (Can also happen without a ship through changes in intel levels)
+# Root = Planet
+# From = Country
+# FromFrom = Fleet of the science ship that surveyed it, if any
+planet_event = {
 	id = mom_exiles.4
 	title = "mom_exiles.4.name"
 	desc = "mom_exiles.4.desc"
 	picture = GFX_evt_city_ruins
 	is_triggered_only = yes
-	location = from
+	location = root
 	show_sound = event_ghost_town
 	
 	trigger = {
-		FROM = { #planet
-			has_planet_flag = mom_exiles_planet
-		}
-		owner = {
+		has_planet_flag = mom_exiles_planet
+		From = {
 			has_event_chain = mom_exiles_planet
-			not = {
+			NOT = {
 				has_country_flag = mom_exiles_planet_surveyed
 			}
 		}
 	}
 	immediate = {
-		owner = {
+		From = {
 			remove_point_of_interest = mom_exiles_system.2
 			set_country_flag = mom_exiles_planet_surveyed
 		}
@@ -146,8 +148,8 @@ ship_event = {
 		name = mom_exiles.4.a
 		enable_special_project = {
 			name = "MOM_EXILES_PLANET_EXPEDITION_PROJECT"
-			owner = root.owner
-			location = from
+			owner = From
+			location = root
 		}
 	}
 }
@@ -769,7 +771,7 @@ planet_event = {
 	}
 	option = {
 		name = mom_exiles.17.a
-		save_event_target_as = mom_exiles_planet
+		save_global_event_target_as = mom_exiles_planet
 		remove_modifier = "mom_scared_population"
 		owner = {
 			end_event_chain = "mom_exiles_planet"
