@@ -218,7 +218,7 @@ planet_event = {
 		owner = {
 			has_event_chain = mom_exiles_planet
 		}
-		num_pops > 0
+		pop_amount > 0
 	}
 	immediate = {
 		owner = {
@@ -557,12 +557,10 @@ planet_event = {
 	immediate = {
 		IF = {
 			limit = { 
-				count_owned_pop = {
-					count > 10
-				} 
+				pop_amount > 500
 			}
-			random_owned_pop = {
-				kill_pop = yes
+			weighted_random_owned_pop_group = {
+				kill_single_pop = yes
 			}
 			planet_event = {
 				id = mom_exiles.14 #Re fire this event in a month

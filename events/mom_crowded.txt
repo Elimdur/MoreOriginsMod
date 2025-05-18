@@ -70,8 +70,6 @@ event = {
 					add_district = district_farming
 					add_district = district_farming
 					add_district = district_generator
-					add_district = district_industrial
-					add_district = district_industrial
 					add_building = building_precinct_house
 					add_building = building_bureaucratic_1
 					add_building = building_commercial_zone
@@ -79,11 +77,9 @@ event = {
 					add_building = building_holo_theatres
 					while = {
 						limit = {
-							count_owned_pop = {
-								count < 65
-							}
+							pop_amount < 6500
 						}
-						create_pop = {
+						create_pop_group = {
 							species = owner
 						}
 					}

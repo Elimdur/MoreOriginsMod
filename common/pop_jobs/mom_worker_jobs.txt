@@ -1,8 +1,18 @@
 mom_destroyed_climate = {
 	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_paradise_dome
-	clothes_texture_index = 2
+
+	swappable_data = {
+		default = {
+			condition_string = WORKER_JOB_TRIGGER
+			building_icon = building_paradise_dome
+		}
+	}
+
+	tags = {
+		energy
+		minerals
+		food
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -103,11 +113,21 @@ mom_destroyed_climate = {
 }
 
 mom_destroyed_climate_drone = {
-	icon = mom_destroyed_climate
 	category = simple_drone
-	condition_string = DRONE_JOB_TRIGGER
-	building_icon = building_paradise_dome
-	clothes_texture_index = 2
+	
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = building_paradise_dome			
+			icon = mom_destroyed_climate
+		}
+	}
+
+	tags = {
+		energy
+		minerals
+		food
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes

@@ -11,6 +11,13 @@ origin_mom_house_divided = {
 
 	possible = {
 		ethics = { NOR = { value = ethic_pacifist value = ethic_fanatic_pacifist value = ethic_gestalt_consciousness } }
+		graphical_culture = {
+			NOR = {
+				text = graphical_culture_tooltip_not_biological
+				value = biogenesis_01
+				value = biogenesis_02
+			}
+		}
 	}
 
 	description = "origin_tooltip_mom_house_divided_effects"

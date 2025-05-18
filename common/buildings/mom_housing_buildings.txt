@@ -7,11 +7,20 @@ building_mom_habitat = {
 
 	category = government
 
+	building_sets = {
+		government
+		urban
+		entertainment
+		resort
+	}
+
 	potential = {
-		NOT = { is_planet_class = pc_habitat }
+		is_artificial = no
 		exists = owner
 		owner = {
-			is_regular_empire = yes
+			NOT = {
+				has_authority = auth_machine_intelligence
+			}
 			has_origin = origin_mom_climate_destroyed
 		}
 	}
@@ -21,13 +30,16 @@ building_mom_habitat = {
 	}
 
 	destroy_trigger = {
-		always = no
+		exists = owner
+		owner = {
+			has_authority = auth_machine_intelligence
+		}
 	}
 
 	planet_modifier = {
-		planet_housing_add = 15
+		planet_housing_add = 1500
 		pop_environment_tolerance = 0.15
-		planet_amenities_add = 10
+		planet_amenities_add = 1000
 	}
 
 	triggered_planet_modifier = {
@@ -38,7 +50,7 @@ building_mom_habitat = {
 			}
 		}
 		modifier = {
-			job_mom_destroyed_climate_drone_add = 7
+			job_mom_destroyed_climate_drone_add = 700
 		}
 	}
 
@@ -50,7 +62,7 @@ building_mom_habitat = {
 			}
 		}
 		modifier = {
-			job_mom_destroyed_climate_add = 7
+			job_mom_destroyed_climate_add = 700
 		}
 	}
 
@@ -62,7 +74,7 @@ building_mom_habitat = {
 			}
 		}
 		modifier = {
-			planet_housing_add = 1
+			planet_housing_add = 100
 		}
 	}
 
@@ -85,7 +97,7 @@ building_mom_habitat = {
 			weight = 200
 			planet = {
 				owner = {
-					any_owned_pop = {
+					any_owned_pop_group = {
 						is_organic_species = yes
 						prevprev = { habitability = { who = prev value < 0.7 } }
 					}

@@ -242,6 +242,7 @@ create_mom_colony_house_divided = {
 	}
 	# 1 jobs
 	add_district = district_city
+	add_district = district_city
 	# 2 jobs
 	if = {
 		limit = { 
@@ -259,8 +260,18 @@ create_mom_colony_house_divided = {
 	# 2 jobs
 	add_district = district_generator
 	# 4 jobs
-	add_district = district_industrial
-	add_district = district_industrial
+	add_zone = {
+		district = 1
+		zone = zone_research_unity
+		zone_slot = 2
+		replace = yes
+	}
+	add_zone = {
+		district = 1
+		zone = zone_industrial
+		zone_slot = 1
+		replace = yes
+	}
 	# 3 jobs
 	add_building = building_capital
 	# 2 jobs
