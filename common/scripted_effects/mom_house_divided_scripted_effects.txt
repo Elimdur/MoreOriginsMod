@@ -51,6 +51,8 @@ create_mom_hd_warlike_defector_1 = {
 		origin = origin_mom_house_divided_splinter_colony
 		flag = random
 		type = default
+		ignore_initial_colony_error = yes
+		day_zero_contact = no
 	}
 	set_owner = last_created_country
 	last_created_country = {
@@ -81,6 +83,8 @@ create_mom_hd_warlike_defector_2 = {
 		origin = origin_mom_house_divided_splinter_colony
 		flag = random
 		type = default
+		ignore_initial_colony_error = yes
+		day_zero_contact = no
 	}
 	set_owner = last_created_country
 	last_created_country = {
@@ -112,6 +116,8 @@ create_mom_hd_peaceful_defector_1 = {
 		origin = origin_mom_house_divided_splinter_colony
 		flag = random
 		type = default
+		ignore_initial_colony_error = yes
+		day_zero_contact = no
 	}
 	set_owner = last_created_country
 	last_created_country = {
@@ -143,6 +149,8 @@ create_mom_hd_peaceful_defector_2 = {
 		origin = origin_mom_house_divided_splinter_colony
 		flag = random
 		type = default
+		ignore_initial_colony_error = yes
+		day_zero_contact = no
 	}
 	set_owner = last_created_country
 	last_created_country = {
@@ -173,6 +181,8 @@ create_mom_hd_cultist_defector_1 = {
 		origin = origin_mom_house_divided_splinter_colony
 		flag = random
 		type = default
+		ignore_initial_colony_error = yes
+		day_zero_contact = no
 	}
 	set_owner = last_created_country
 	last_created_country = {
@@ -203,6 +213,8 @@ create_mom_hd_cultist_defector_2 = {
 		origin = origin_mom_house_divided_splinter_colony
 		flag = random
 		type = default
+		ignore_initial_colony_error = yes
+		day_zero_contact = no
 	}
 	set_owner = last_created_country
 	last_created_country = {
