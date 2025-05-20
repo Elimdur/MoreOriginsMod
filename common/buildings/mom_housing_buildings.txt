@@ -3,7 +3,7 @@
 #############
 building_mom_habitat = {
 	base_buildtime = 1800
-	base_cap_amount = 1
+	planet_limit = 1
 
 	category = government
 
