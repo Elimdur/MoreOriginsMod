@@ -284,6 +284,7 @@ create_mom_colony_house_divided = {
 		zone_slot = 1
 		replace = yes
 	}
+	remove_all_buildings = yes
 	# 3 jobs
 	add_building = building_capital
 	# 2 jobs

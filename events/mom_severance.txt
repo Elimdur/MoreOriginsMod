@@ -48,7 +48,162 @@ event = {
 									}
 								}
 							}
-							IF = {
+							if = {
+								limit = {
+									has_star_flag = sol_system
+								}
+								if = {
+									limit = {
+										any_system = {
+											has_star_flag = deneb_system
+										}
+									}
+									random_system = {
+										limit = {
+											has_star_flag = deneb_system
+										}
+										every_fleet_in_system = {
+											delete_fleet = this
+										}
+										every_system_planet = {
+											limit = {
+												has_owner = yes
+											}
+											owner = {
+												destroy_country = yes
+											}
+											remove_all_districts = yes
+												remove_zone = {
+												district = district_city
+												zone = zone_research_unity
+											}
+
+											remove_zone = {
+												district = district_city
+												zone = zone_industrial
+											}
+											destroy_colony = yes
+											reset_planet = yes
+											change_pc = event_target:mom_severance_country.capital_scope
+											reroll_planet = yes
+											create_colony = {
+												owner = event_target:mom_severance_country
+											}
+											remove_all_buildings = yes
+											save_global_event_target_as = mom_severance_colony
+											while = {
+												count = 2
+												create_pop_group = {
+													species = owner_main_species
+												}
+											}
+											IF = {
+												limit = {
+													owner = {
+														is_hive_empire = yes
+													}										
+												}
+												add_building = building_hive_capital
+											}
+											ELSE_IF = {
+												limit = {
+													owner = {
+														is_machine_empire = yes
+													}										
+												}
+												add_building = building_machine_capital
+											}
+											ELSE = {
+												add_building = building_colony_shelter
+											}
+											set_name = NAME_Unity
+											validate_planet_buildings_and_districts = yes
+										}
+										set_star_flag = mom_severance_system
+										prev = { # done this way to ensure we don't spawn "orphan" wormholes (wormholes that aren't linked to anything)
+											spawn_natural_wormhole = {
+												bypass_type = wormhole
+												random_pos = yes
+												orbit_angle = 360
+												
+											}
+										}
+										spawn_natural_wormhole = {
+											bypass_type = wormhole
+											random_pos = yes
+											orbit_angle = 360
+										}
+										link_wormholes = prev
+									}
+								}
+								else = {
+									random_system = {										
+										spawn_system = {
+											initializer = deneb_system
+										}
+									}
+									random_system = {
+										limit = {
+											has_star_flag = deneb_system
+										}
+										random_system_planet = {
+											limit = {
+												has_planet_flag = planet_unity
+											}
+											change_pc = event_target:mom_severance_country.capital_scope
+											reroll_planet = yes
+											create_colony = {
+												owner = event_target:mom_severance_country
+											}
+											remove_all_buildings = yes
+											save_global_event_target_as = mom_severance_colony
+											while = {
+												count = 2
+												create_pop_group = {
+													species = owner_main_species
+												}
+											}
+											IF = {
+												limit = {
+													owner = {
+														is_hive_empire = yes
+													}										
+												}
+												add_building = building_hive_capital
+											}
+											ELSE_IF = {
+												limit = {
+													owner = {
+														is_machine_empire = yes
+													}										
+												}
+												add_building = building_machine_capital
+											}
+											ELSE = {
+												add_building = building_colony_shelter
+											}
+											set_name = NAME_Unity
+											validate_planet_buildings_and_districts = yes
+										}
+										set_star_flag = mom_severance_system
+										prev = { # done this way to ensure we don't spawn "orphan" wormholes (wormholes that aren't linked to anything)
+											spawn_natural_wormhole = {
+												bypass_type = wormhole
+												random_pos = yes
+												orbit_angle = 360
+												
+											}
+										}
+										spawn_natural_wormhole = {
+											bypass_type = wormhole
+											random_pos = yes
+											orbit_angle = 360
+										}
+										link_wormholes = prev
+									}
+								}
+							}
+							else_if = {
 								limit = {
 									any_system = {
 										NOR = {
@@ -107,6 +262,7 @@ event = {
 										create_colony = {
 											owner = event_target:mom_severance_country
 										}
+										remove_all_buildings = yes
 										save_global_event_target_as = mom_severance_colony
 										while = {
 											count = 2
@@ -133,6 +289,7 @@ event = {
 										ELSE = {
 											add_building = building_colony_shelter
 										}
+										validate_planet_buildings_and_districts = yes
 									}
 									set_star_flag = mom_severance_system
 									prev = { # done this way to ensure we don't spawn "orphan" wormholes (wormholes that aren't linked to anything)
@@ -219,6 +376,7 @@ event = {
 										create_colony = {
 											owner = event_target:mom_severance_country
 										}
+										remove_all_buildings = yes
 										save_global_event_target_as = mom_severance_colony
 										while = {
 											count = 2
@@ -245,6 +403,7 @@ event = {
 										ELSE = {
 											add_building = building_colony_shelter
 										}
+										validate_planet_buildings_and_districts = yes
 									}
 									set_star_flag = mom_severance_system
 									prev = { # done this way to ensure we don't spawn "orphan" wormholes (wormholes that aren't linked to anything)
@@ -330,6 +489,7 @@ event = {
 										create_colony = {
 											owner = event_target:mom_severance_country
 										}
+										remove_all_buildings = yes
 										save_global_event_target_as = mom_severance_colony
 										while = {
 											count = 2
@@ -355,7 +515,8 @@ event = {
 										}
 										ELSE = {
 											add_building = building_colony_shelter
-										}								
+										}
+										validate_planet_buildings_and_districts = yes							
 									}
 									set_star_flag = mom_severance_system
 									prev = { # done this way to ensure we don't spawn "orphan" wormholes (wormholes that aren't linked to anything)
@@ -418,10 +579,11 @@ event = {
 										planet_size < 26
 									}
 									change_pc = pc_gaia
-									reset_planet = yes
+									reroll_planet = yes
 									create_colony = {
 										owner = event_target:mom_severance_country
 									}
+									remove_all_buildings = yes
 									save_global_event_target_as = mom_severance_colony
 									while = {
 										count = 2
@@ -447,7 +609,8 @@ event = {
 									}
 									ELSE = {
 										add_building = building_colony_shelter
-									}								
+									}
+									validate_planet_buildings_and_districts = yes							
 								}
 								set_star_flag = mom_severance_system
 								prev = { # done this way to ensure we don't spawn "orphan" wormholes (wormholes that aren't linked to anything)
