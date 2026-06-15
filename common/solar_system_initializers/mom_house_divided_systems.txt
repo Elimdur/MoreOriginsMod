@@ -222,8 +222,8 @@ neighbor_hd_t1_first_colony = {
 		size = { min = 12 max = 18 }
 		
 		init_effect = {
-			set_planet_flag = prescripted_ideal		# used by code, do not remove
-			set_planet_flag = mom_house_divided_colony_1
+			set_carrier_flag = prescripted_ideal		# used by code, do not remove
+			set_carrier_flag = mom_house_divided_colony_1
 		}
 	}
 	
@@ -287,8 +287,8 @@ neighbor_hd_t2_second_colony = {
 		change_orbit = @base_moon_distance
 		
 		init_effect = {
-			set_planet_flag = prescripted_ideal		# used by code, do not remove
-			set_planet_flag = mom_house_divided_colony_2
+			set_carrier_flag = prescripted_ideal		# used by code, do not remove
+			set_carrier_flag = mom_house_divided_colony_2
 		}		
 
 		moon = {
@@ -742,8 +742,8 @@ mom_hd_sol_neighbor_t1_first_colony = {
 		size = { min = 12 max = 18 }
 
 		init_effect = {
-			set_planet_flag = prescripted_ideal		# used by code, do not remove
-			set_planet_flag = mom_house_divided_colony_1
+			set_carrier_flag = prescripted_ideal		# used by code, do not remove
+			set_carrier_flag = mom_house_divided_colony_1
 			save_global_event_target_as = colony_name_2
 		}
 	}
@@ -813,8 +813,8 @@ mom_hd_sol_neighbor_t2_second_colony = {
 		size = { min = 14 max = 24 }
 
 		init_effect = {
-			set_planet_flag = prescripted_ideal		# used by code, do not remove
-			set_planet_flag = mom_house_divided_colony_2
+			set_carrier_flag = prescripted_ideal		# used by code, do not remove
+			set_carrier_flag = mom_house_divided_colony_2
 			save_global_event_target_as = colony_name_2
 		}
 		

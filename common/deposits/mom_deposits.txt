@@ -59,7 +59,7 @@ d_mom_city_ruins = {
 
 	on_cleared = {
 		hidden_effect = {
-			planet_event = { id = mom_exiles.8001 }
+			carrier_event = { id = mom_exiles.8001 }
 		}
 	}
 

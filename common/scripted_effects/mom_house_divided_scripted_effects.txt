@@ -273,22 +273,25 @@ create_mom_colony_house_divided = {
 	add_district = district_generator
 	# 4 jobs
 	add_zone = {
-		district = 1
+		district = district_city
 		zone = zone_research_unity
-		zone_slot = 2
-		replace = yes
+		zone_slot = 1
 	}
 	add_zone = {
-		district = 1
+		district = district_city
 		zone = zone_industrial
-		zone_slot = 1
-		replace = yes
-	}
+		zone_slot = 2
+	}	
 	remove_all_buildings = yes
+
 	# 3 jobs
 	add_building = building_capital
 	# 2 jobs
 	add_building = building_research_lab_1
+	# add_building = {
+	# 	building = building_factory_1
+	# 	zone = zone_industrial
+	# }
 	solar_system = {
 		every_system_planet = {
 			limit = {

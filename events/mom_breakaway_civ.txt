@@ -13,7 +13,7 @@ event = {
 				has_origin = origin_mom_breakaway_civ
 			}
 			capital_scope = {
-				set_planet_flag = mom_breakaway_civ_planet
+				set_carrier_flag = mom_breakaway_civ_planet
 				every_deposit = {
 					limit = {
 						is_deposit_type = d_failing_infrastructure
@@ -57,18 +57,18 @@ event = {
 }
 
 #on action event when colony gets destroyed or changes owner to clean up the blockers
-planet_event = {
+carrier_event = {
 	id = mom_breakaway_civ.2
 	hide_window = yes
 
 	is_triggered_only = yes
 
 	trigger = {
-		has_planet_flag = mom_breakaway_civ_planet
+		has_carrier_flag = mom_breakaway_civ_planet
 	}
 
 	immediate = {
-		remove_planet_flag = mom_breakaway_civ_planet
+		remove_carrier_flag = mom_breakaway_civ_planet
 		if = {
 			limit = {
 				#has_deposit = mom_breakaway_civ_blocker

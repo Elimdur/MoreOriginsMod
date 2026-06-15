@@ -32,13 +32,13 @@ special_project = {
     picture = GFX_evt_in_the_dark
     icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
 
-    event_scope = planet_event
+    event_scope = carrier_event
 
     requirements = {
     }
 
     on_success = {
-        planet_event = { id = mom_exiles.9 }
+        carrier_event = { id = mom_exiles.9 }
     }
 
     on_fail = {
@@ -55,13 +55,13 @@ special_project = {
     picture = GFX_evt_ground_combat
     icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
 
-    event_scope = planet_event
+    event_scope = carrier_event
 
     requirements = {
     }
 
     on_success = {
-        planet_event = { id = mom_exiles.16 }
+        carrier_event = { id = mom_exiles.16 }
     }
 
     on_fail = {
@@ -78,13 +78,13 @@ special_project = {
     picture = GFX_evt_physics_research
     icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
 
-    event_scope = planet_event
+    event_scope = carrier_event
 
     requirements = {
     }
 
     on_success = {
-        planet_event = { id = mom_exiles.19 }
+        carrier_event = { id = mom_exiles.19 }
     }
 
     on_fail = {
@@ -101,13 +101,13 @@ special_project = {
     picture = GFX_evt_ringworld
     icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
 
-    event_scope = planet_event
+    event_scope = carrier_event
 
     requirements = {
     }
 
     on_success = {
-        planet_event = { id = mom_exiles.22 }
+        carrier_event = { id = mom_exiles.22 }
     }
 
     on_fail = {

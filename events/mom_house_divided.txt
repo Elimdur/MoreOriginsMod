@@ -99,8 +99,8 @@ event = {
 					NOT = {
 						any_system_planet = {
 							OR = {
-								has_planet_flag = mom_house_divided_colony_1
-								has_planet_flag = mom_house_divided_colony_2
+								has_carrier_flag = mom_house_divided_colony_1
+								has_carrier_flag = mom_house_divided_colony_2
 							}
 						}
 					}
@@ -164,17 +164,17 @@ event = {
 				closest_system = {
 					limit = {
 						any_system_planet = {
-							has_planet_flag = mom_house_divided_colony_1
+							has_carrier_flag = mom_house_divided_colony_1
 						}
 					}
 					random_system_planet = {
 						limit = {
-							has_planet_flag = mom_house_divided_colony_1
+							has_carrier_flag = mom_house_divided_colony_1
 						}
 						star = {
 							save_event_target_as = star_name_1
 						}
-						set_planet_flag = mom_house_divided_colony_1_fire_se
+						set_carrier_flag = mom_house_divided_colony_1_fire_se
 						create_colony = {
 							owner = event_target:mom_house_divided_country
 						}
@@ -189,15 +189,15 @@ event = {
 				closest_system = {
 					limit = {
 						any_system_planet = {
-							has_planet_flag = mom_house_divided_colony_2
+							has_carrier_flag = mom_house_divided_colony_2
 						}
 					}
 					random_system_planet = {
 						limit = {
-							has_planet_flag = mom_house_divided_colony_2
+							has_carrier_flag = mom_house_divided_colony_2
 						}
 						save_event_target_as = colony_name_2
-						set_planet_flag = mom_house_divided_colony_2_fire_se
+						set_carrier_flag = mom_house_divided_colony_2_fire_se
 						create_colony = {
 							owner = event_target:mom_house_divided_country
 						}
@@ -212,16 +212,16 @@ event = {
 			}
 			random_galaxy_planet = {
 				limit = {
-					has_planet_flag = mom_house_divided_colony_1_fire_se
+					has_carrier_flag = mom_house_divided_colony_1_fire_se
 				}
-				remove_planet_flag = mom_house_divided_colony_1_fire_se
+				remove_carrier_flag = mom_house_divided_colony_1_fire_se
 				create_mom_hd_defector_1 = yes
 			}
 			random_galaxy_planet = {
 				limit = {
-					has_planet_flag = mom_house_divided_colony_2_fire_se
+					has_carrier_flag = mom_house_divided_colony_2_fire_se
 				}
-				remove_planet_flag = mom_house_divided_colony_2_fire_se
+				remove_carrier_flag = mom_house_divided_colony_2_fire_se
 				create_mom_hd_defector_2 = yes
 			}
 			random_country = {

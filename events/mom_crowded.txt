@@ -34,7 +34,7 @@ event = {
 				# 	message = no
 				# }
 				capital_scope = {
-					set_planet_flag = mom_crowded_planet
+					set_carrier_flag = mom_crowded_planet
 					solar_system = {
 						random_system_planet = {
 							limit = {
@@ -71,8 +71,10 @@ event = {
 					add_district = district_farming
 					add_district = district_generator
 					add_building = building_precinct_house
-					add_building = building_bureaucratic_1
-					add_building = building_commercial_zone
+					add_building = {
+						building = building_bureaucratic_1
+						zone = zone_research_unity
+					}
 					add_building = building_commercial_zone
 					add_building = building_holo_theatres
 					while = {
@@ -95,7 +97,7 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		any_planet_within_border = {
-			has_planet_flag = mom_crowded_planet
+			has_carrier_flag = mom_crowded_planet
 			OR = {
 				has_owner = no
 				is_planet_class = pc_city
@@ -115,7 +117,7 @@ country_event = {
 		while = {
 			limit = {
 				any_planet_within_border = {
-					has_planet_flag = mom_crowded_planet
+					has_carrier_flag = mom_crowded_planet
 					OR = {
 						has_owner = no
 						is_planet_class = pc_city
@@ -132,7 +134,7 @@ country_event = {
 			}
 			random_planet_within_border = {
 				limit = {
-					has_planet_flag = mom_crowded_planet
+					has_carrier_flag = mom_crowded_planet
 					OR = {
 						has_owner = no
 						is_planet_class = pc_city
@@ -146,7 +148,7 @@ country_event = {
 						}
 					}
 				}
-				remove_planet_flag = mom_crowded_planet
+				remove_carrier_flag = mom_crowded_planet
 				remove_modifier = mom_crowded_world
 			}
 		}

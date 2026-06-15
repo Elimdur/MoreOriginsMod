@@ -11,6 +11,7 @@ origin_mom_house_divided = {
 
 	possible = {
 		ethics = { NOR = { value = ethic_pacifist value = ethic_fanatic_pacifist value = ethic_gestalt_consciousness } }
+		is_nomadic = no
 		graphical_culture = {
 			NOR = {
 				text = graphical_culture_tooltip_not_biological
@@ -64,6 +65,7 @@ origin_mom_severance = {
 
 	possible = {
 		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		is_nomadic = no
 	}
 
 	description = "origin_tooltip_mom_severance_effects"
@@ -91,6 +93,7 @@ origin_mom_breakaway_civ = {
 
 	possible = {
 		authority = { NOR = { value = auth_corporate value = auth_hive_mind value = auth_machine_intelligence} }
+		is_nomadic = no
 	}
 
 	description = "origin_tooltip_mom_breakaway_civ_effects"
@@ -116,6 +119,7 @@ origin_mom_exiles = {
 
 	possible = {
 		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		is_nomadic = no
 	}
 
 	description = "origin_tooltip_mom_exiles_effects"
@@ -132,7 +136,7 @@ origin_mom_exiles = {
 origin_mom_god_emperor = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/unused/origins_messiah_cult.dds"
-	picture = GFX_origin_shroud_touched
+	picture = GFX_origin_mom_divine_guidance
 
 	max_once_global = yes
 
@@ -165,6 +169,7 @@ origin_mom_crowded = {
 	possible = {
 		ethics = { NOT = { value = ethic_gestalt_consciousness } }
 		civics = { NOT = { value = civic_agrarian_idyll }	}
+		is_nomadic = no
 	}
 
 	description = "origin_tooltip_mom_crowded_effects"
@@ -220,6 +225,7 @@ origin_mom_climate_destroyed = {
 
 	possible = {
 		authority = { NOT = { value = auth_machine_intelligence } }
+		is_nomadic = no
 	}
 
 	random_weight = {
@@ -243,7 +249,7 @@ origin_mom_wormhole_junction = {
 	}
 
 	possible = {
-		always = yes
+		is_nomadic = no
 	}
 
 	random_weight = {

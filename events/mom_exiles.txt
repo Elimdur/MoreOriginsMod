@@ -86,7 +86,7 @@ ship_event = {
 	immediate = {
 		FROM = { # system
 			random_system_planet = {
-				limit = { has_planet_flag = mom_exiles_planet }
+				limit = { has_carrier_flag = mom_exiles_planet }
 				save_event_target_as = mom_exiles_planet
 			}
 		}
@@ -120,7 +120,7 @@ ship_event = {
 # Root = Planet
 # From = Country
 # FromFrom = Fleet of the science ship that surveyed it, if any
-planet_event = {
+carrier_event = {
 	id = mom_exiles.4
 	title = "mom_exiles.4.name"
 	desc = "mom_exiles.4.desc"
@@ -130,7 +130,7 @@ planet_event = {
 	show_sound = event_ghost_town
 	
 	trigger = {
-		has_planet_flag = mom_exiles_planet
+		has_carrier_flag = mom_exiles_planet
 		From = {
 			has_event_chain = mom_exiles_planet
 			NOT = {
@@ -200,7 +200,7 @@ ship_event = {
 
 # event 6 removed
 
-planet_event = {
+carrier_event = {
 	id = mom_exiles.7
 	title = "mom_exiles.7.name"
 	desc = "mom_exiles.7.desc"
@@ -214,7 +214,7 @@ planet_event = {
 		has_owner = yes
 	}
 	trigger = {
-		has_planet_flag = mom_exiles_planet
+		has_carrier_flag = mom_exiles_planet
 		owner = {
 			has_event_chain = mom_exiles_planet
 		}
@@ -238,17 +238,17 @@ planet_event = {
 }
 
 #Last Tileblocker removed. Entrance to the Depth found
-planet_event = {
+carrier_event = {
 	id = mom_exiles.8001
 	hide_window = yes
 	is_triggered_only = yes
 
 	immediate = {
-		planet_event = { id = mom_exiles.8002 days = 1 }
+		carrier_event = { id = mom_exiles.8002 days = 1 }
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = mom_exiles.8002
 	hide_window = yes
 	is_triggered_only = yes
@@ -260,12 +260,12 @@ planet_event = {
 					has_deposit = d_mom_city_ruins
 				}
 			}
-			planet_event = { id = mom_exiles.8 }
+			carrier_event = { id = mom_exiles.8 }
 		}
 	}
 }
 
-planet_event = {
+carrier_event = {
 	id = mom_exiles.8
 	title = "mom_exiles.8.name"
 	desc = "mom_exiles.8.desc"
@@ -275,7 +275,7 @@ planet_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_planet_flag = mom_exiles_mines
+		set_carrier_flag = mom_exiles_mines
 		owner = {
 			remove_point_of_interest = mom_exiles_system.4
 		}
@@ -295,7 +295,7 @@ planet_event = {
 
 # Expedition leads to Attack
 
-planet_event = {
+carrier_event = {
 	id = mom_exiles.9
 	title = "mom_exiles.9.name"
 	desc = "mom_exiles.9.desc"
@@ -384,7 +384,7 @@ planet_event = {
 
 #Lost to Ancient Horrors
 
-planet_event = {
+carrier_event = {
 	id = mom_exiles.10
 	title = "mom_exiles.10.name"
 	desc = "mom_exiles.10.desc"
@@ -401,7 +401,7 @@ planet_event = {
 		is_occupied_flag = yes
 	}
 	trigger = {
-		has_planet_flag = mom_exiles_planet
+		has_carrier_flag = mom_exiles_planet
 		#Owner of the planet has event chain
 		owner = { # Country
 			has_event_chain = mom_exiles_planet
@@ -416,7 +416,7 @@ planet_event = {
 		}
 	}
 	immediate = {
-		planet_event = {
+		carrier_event = {
 			id = mom_exiles.14 #Start the rolling purge
 			days = 60
 		}
@@ -465,7 +465,7 @@ country_event = {
 	
 	trigger = {
 		fromfrom = { #planet
-			has_planet_flag = mom_exiles_planet
+			has_carrier_flag = mom_exiles_planet
 			is_occupied_flag = no
 		}
 		has_country_flag = mom_exiles_fight_1
@@ -481,7 +481,7 @@ country_event = {
 		name = mom_exiles.12.a
 		random_owned_planet = {
 			limit = {
-				has_planet_flag = mom_exiles_planet
+				has_carrier_flag = mom_exiles_planet
 			}
 			enable_special_project = {
 				name = "MOM_EXILES_DEEPS_RETALIATION_PROJECT"
@@ -494,7 +494,7 @@ country_event = {
 
 #Reconquest against Horrors
 
-planet_event = {
+carrier_event = {
 	id = mom_exiles.13
 	title = "mom_exiles.13.name"
 	desc = "mom_exiles.13.desc"
@@ -512,7 +512,7 @@ planet_event = {
 		is_occupied_flag = no
 	}
 	trigger = {		
-		has_planet_flag = mom_exiles_planet		
+		has_carrier_flag = mom_exiles_planet		
 		owner = {
 			has_event_chain = mom_exiles_planet
 			has_country_flag = mom_exiles_fight_1
@@ -538,7 +538,7 @@ planet_event = {
 
 # Periodically kill a pop until there is only one left
 # Then give an event to the owner telling them about the pop fortifying their position.
-planet_event = {
+carrier_event = {
 	id = mom_exiles.14
 	hide_window = yes
 	is_triggered_only = yes
@@ -546,7 +546,7 @@ planet_event = {
 		is_occupied_flag = yes
 	}
 	trigger = {
-		has_planet_flag = mom_exiles_planet		
+		has_carrier_flag = mom_exiles_planet		
 		owner = {
 			OR = {
 				has_country_flag = mom_exiles_fight_1
@@ -562,7 +562,7 @@ planet_event = {
 			weighted_random_owned_pop_group = {
 				kill_single_pop = yes
 			}
-			planet_event = {
+			carrier_event = {
 				id = mom_exiles.14 #Re fire this event in a month
 				days = 90
 				random = 15
@@ -592,7 +592,7 @@ country_event = {
 }
 
 # Assault of the Underground
-planet_event = {
+carrier_event = {
 	id = mom_exiles.16
 	title = "mom_exiles.16.name"
 	desc = "mom_exiles.16.desc"
@@ -705,7 +705,7 @@ country_event = {
 
 	trigger = {
 		fromfrom = { #planet
-			has_planet_flag = mom_exiles_planet
+			has_carrier_flag = mom_exiles_planet
 			is_occupied_flag = no
 		}
 		has_event_chain = mom_exiles_planet
@@ -718,7 +718,7 @@ country_event = {
 		name = mom_exiles.17.a
 		random_owned_planet = {
 			limit = {
-				has_planet_flag = mom_exiles_planet
+				has_carrier_flag = mom_exiles_planet
 			}
 			remove_modifier = "mom_scared_population"
 			add_modifier = {
@@ -735,7 +735,7 @@ country_event = {
 
 #Reconquest against Horrors
 
-planet_event = {
+carrier_event = {
 	id = mom_exiles.18
 	title = "mom_exiles.17.name"
 	desc = "mom_exiles.17.desc"
@@ -754,7 +754,7 @@ planet_event = {
 	}
 	trigger = {
 		
-		has_planet_flag = mom_exiles_planet
+		has_carrier_flag = mom_exiles_planet
 		
 		
 		owner = {
@@ -794,7 +794,7 @@ country_event = {
 	immediate = {
 		random_owned_planet = {
 			limit = {
-				has_planet_flag = mom_exiles_planet
+				has_carrier_flag = mom_exiles_planet
 			}
 			save_event_target_as = mom_exiles_planet
 		}
@@ -807,7 +807,7 @@ country_event = {
 		}
 		random_owned_planet = {
 			limit = {
-				has_planet_flag = mom_exiles_planet
+				has_carrier_flag = mom_exiles_planet
 			}
 			save_event_target_as = mom_exiles_planet
 			enable_special_project = {
@@ -820,7 +820,7 @@ country_event = {
 }
 
 # Atmospheric Renewer repaired
-planet_event = {
+carrier_event = {
 	id = mom_exiles.19
 	title = "mom_exiles.19.name"
 	desc = "mom_exiles.19.desc"
@@ -839,13 +839,13 @@ planet_event = {
 	option = {
 		name = mom_exiles.19.a
 		hidden_effect = {
-			planet_event = { id = mom_exiles.20 days = 1800 random = 60 }
+			carrier_event = { id = mom_exiles.20 days = 1800 random = 60 }
 		}
 	}	
 }
 
 # Atmosphere Restored
-planet_event = {
+carrier_event = {
 	id = mom_exiles.20
 	title = "mom_exiles.20.name"
 	desc = "mom_exiles.20.desc"
@@ -979,21 +979,21 @@ planet_event = {
 		owner = {	
 			random_owned_planet = {
 				limit = {
-					has_planet_flag = mom_exiles_planet
+					has_carrier_flag = mom_exiles_planet
 				}
 				remove_modifier = "irradiated_planet"
 				remove_modifier = "mom_expedition_preparation"
-				set_planet_flag = mom_exiles_planet_restored
+				set_carrier_flag = mom_exiles_planet_restored
 			}
 		}
 		hidden_effect = {
-			planet_event = { id = mom_exiles.21 days = 1800 random = 150 }
+			carrier_event = { id = mom_exiles.21 days = 1800 random = 150 }
 		}
 	}
 }
 
 # Living metal storage found and project to study it and a possible restoration of the ring
-planet_event = {
+carrier_event = {
 	id = mom_exiles.21
 	title = "mom_exiles.21.name"
 	desc = "mom_exiles.21.desc"
@@ -1004,7 +1004,7 @@ planet_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_planet_flag = mom_exiles_planet_restored
+		has_carrier_flag = mom_exiles_planet_restored
 		owner = { # Country
 			has_event_chain = mom_exiles_planet_rebuilding
 		}
@@ -1015,7 +1015,7 @@ planet_event = {
 		owner = {
 			random_owned_planet = {
 				limit = {
-					has_planet_flag = mom_exiles_planet
+					has_carrier_flag = mom_exiles_planet
 				}
 				enable_special_project = {
 					name = "MOM_EXILES_RING_RECONSTRUCTION_PROJECT"
@@ -1028,7 +1028,7 @@ planet_event = {
 }
 
 # Ring restoration Project complete
-planet_event = {
+carrier_event = {
 	id = mom_exiles.22
 	title = "mom_exiles.22.name"
 	desc = "mom_exiles.22.desc"
@@ -1039,7 +1039,7 @@ planet_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_planet_flag = mom_exiles_planet_restored
+		has_carrier_flag = mom_exiles_planet_restored
 		owner = { # Country
 			has_event_chain = mom_exiles_planet_rebuilding
 		}
@@ -1050,9 +1050,9 @@ planet_event = {
 		owner = {
 			random_owned_planet = {
 				limit = {
-					has_planet_flag = mom_exiles_planet
+					has_carrier_flag = mom_exiles_planet
 				}
-				set_planet_flag = mom_exiles_ring_restoration
+				set_carrier_flag = mom_exiles_ring_restoration
 				add_modifier = {
 					modifier = "mom_ringworld_reconstruction"
 					days = -1
@@ -1060,13 +1060,13 @@ planet_event = {
 			}
 		}
 		hidden_effect = {
-			planet_event = { id = mom_exiles.23 days = 3600 random = 300 }
+			carrier_event = { id = mom_exiles.23 days = 3600 random = 300 }
 		}
 	}
 }
 
 # Ringworld restored
-planet_event = {
+carrier_event = {
 	id = mom_exiles.23
 	title = "mom_exiles.23.name"
 	desc = "mom_exiles.23.desc"
@@ -1077,7 +1077,7 @@ planet_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_planet_flag = mom_exiles_ring_restoration
+		has_carrier_flag = mom_exiles_ring_restoration
 		owner = { # Country
 			has_event_chain = mom_exiles_planet_rebuilding
 		}
@@ -1104,7 +1104,7 @@ planet_event = {
 
 			random_owned_planet = {
 				limit = {
-					has_planet_flag = mom_exiles_ring_restoration
+					has_carrier_flag = mom_exiles_ring_restoration
 				}
 				create_ambient_object = {
 					type = "mom_exiles_intact_ring_01_object"

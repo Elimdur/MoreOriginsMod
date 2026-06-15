@@ -155,18 +155,18 @@ country_event = {
 		save_event_target_as = mom_wormhole_system_current_master
 		event_target:mom_junction_master_system = {
 			random_list = {#random Delay for Option to Discover new termini
-				10 = { planet_event = { id = mom_junction.21 days = 3600 } }#Ten Years
-				30 = { planet_event = { id = mom_junction.21 days = 7200 } }#Twenty years
-				30 = { planet_event = { id = mom_junction.21 days = 10800 } }#Thirty Years
-				20 = { planet_event = { id = mom_junction.21 days = 14400 } }# Forty Years
-				10 = { planet_event = { id = mom_junction.21 days = 18000 } }# Fifty Years
+				10 = { carrier_event = { id = mom_junction.21 days = 3600 } }#Ten Years
+				30 = { carrier_event = { id = mom_junction.21 days = 7200 } }#Twenty years
+				30 = { carrier_event = { id = mom_junction.21 days = 10800 } }#Thirty Years
+				20 = { carrier_event = { id = mom_junction.21 days = 14400 } }# Forty Years
+				10 = { carrier_event = { id = mom_junction.21 days = 18000 } }# Fifty Years
 			}
 
 		}
 	}
 }
 
-planet_event = { #Fires Event to Space Owner
+carrier_event = { #Fires Event to Space Owner
 	id = mom_junction.21
 	hide_window = yes
 	is_triggered_only = yes

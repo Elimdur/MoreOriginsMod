@@ -212,6 +212,7 @@
  
  #Ancient Robot Armies
  mom_ancient_horrors:0 "Ancient Robotic Warmachines"
+ mom_ancient_horrors_desc:0 "Terrible warped machines of war, long since forgotten."
 
  #We lost the battle against the horrors
  mom_exiles.10.name:0 "Tragedy"
